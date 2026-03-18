@@ -1,0 +1,8 @@
+# Private correspondence — not for public repository
+letter-*.md
+correspondence/
+
+# Python / OS
+__pycache__/
+*.pyc
+.DS_Store
