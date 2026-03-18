@@ -46,12 +46,12 @@ N03_CACHE = CACHE_DIR / "N03_fukuoka.gpkg"
 # Risk palette — 5-level sequential, print-safe
 # ---------------------------------------------------------------------------
 RISK_COLORS = {
-    "very_high":   "#c0392b",  # dark red
-    "high":        "#e08030",  # burnt orange
-    "elevated":    "#e8c840",  # amber
-    "low_moderate":"#7ab8d4",  # muted blue
-    "low":         "#d4eaf0",  # pale blue
-    "no_data":     "#ececec",  # light grey
+    "very_high":   "#d73027",  # RdYlBu vivid red
+    "high":        "#fc8d59",  # RdYlBu orange
+    "elevated":    "#fee090",  # RdYlBu pale yellow
+    "low_moderate":"#91bfdb",  # RdYlBu mid blue
+    "low":         "#e0f3f8",  # RdYlBu very pale blue
+    "no_data":     "#e8e8e8",  # light grey
 }
 RISK_ORDER = ["very_high", "high", "elevated", "low_moderate", "low"]
 RISK_LABELS = {
@@ -80,19 +80,26 @@ def load_districts() -> list:
 
 
 def aggregate_to_municipality(districts: list) -> dict:
-    """Weighted mean risk score per municipality (JIS 5-digit code)."""
-    acc = defaultdict(lambda: {"score_x_n": 0.0, "n": 0, "name": ""})
+    """Max district risk score per municipality (JIS 5-digit code).
+
+    Using max rather than weighted mean so that municipalities containing
+    even one very-high-risk district show as very_high. Weighted mean dilutes
+    the signal when newer buildings coexist with pre-1975 stock.
+    """
+    acc = defaultdict(lambda: {"max_score": 0.0, "n": 0, "name": ""})
     for d in districts:
         code = d["municipality_code"]
         n    = d["n_buildings"]
-        acc[code]["score_x_n"] += d["risk_score"] * n
-        acc[code]["n"]         += n
-        acc[code]["name"]       = d["municipality"]
+        score = d["risk_score"]
+        if score > acc[code]["max_score"]:
+            acc[code]["max_score"] = score
+        acc[code]["n"]    += n
+        acc[code]["name"]  = d["municipality"]
     return {
         code: {
-            "avg_score":    v["score_x_n"] / v["n"],
+            "max_score":    v["max_score"],
             "n_buildings":  v["n"],
-            "risk_level":   score_to_level(v["score_x_n"] / v["n"]),
+            "risk_level":   score_to_level(v["max_score"]),
             "municipality": v["name"],
         }
         for code, v in acc.items()
@@ -151,8 +158,8 @@ def make_figure(gdf: gpd.GeoDataFrame, muni_scores: dict) -> None:
     gdf_muni["risk_level"]  = gdf_muni[code_col].map(
         lambda c: muni_scores.get(c, {}).get("risk_level", "no_data")
     )
-    gdf_muni["avg_score"]   = gdf_muni[code_col].map(
-        lambda c: muni_scores.get(c, {}).get("avg_score", np.nan)
+    gdf_muni["max_score"]   = gdf_muni[code_col].map(
+        lambda c: muni_scores.get(c, {}).get("max_score", np.nan)
     )
     gdf_muni["face_color"]  = gdf_muni["risk_level"].map(
         lambda r: RISK_COLORS.get(r, RISK_COLORS["no_data"])
@@ -236,7 +243,7 @@ def make_figure(gdf: gpd.GeoDataFrame, muni_scores: dict) -> None:
     ax.text(
         0.5, -0.01,
         "Fig. 1  Construction-era asbestos risk by municipality, Fukuoka Prefecture (51 municipalities, 1,360 districts, 31,184 transactions).\n"
-        "Risk scores are weighted mean district scores aggregated to municipality level.\n"
+        "Colour shows the highest-scoring district within each municipality. District-level data available in the open dataset.\n"
         "Data: MLIT Real Estate Information Library, 2022-2024. DOI: 10.5281/zenodo.19087985",
         transform=ax.transAxes,
         ha="center", va="top",
