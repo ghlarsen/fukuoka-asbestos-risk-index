@@ -366,7 +366,7 @@ The 9 million vacant homes across Japan are not an abstract policy problem. They
 
 ## Data Availability
 
-All code and derived data supporting this paper are available in the public research repository at https://github.com/ghlarsen/torii (release tag: `v1.0.0-asbestos-paper`; DOI to be assigned via Zenodo at submission). The repository contains:
+All code and derived data supporting this paper are available in the public research repository at https://github.com/ghlarsen/fukuoka-asbestos-risk-index (release tag: `v1.0.0`; DOI to be assigned via Zenodo at submission). The repository contains:
 - `build_asbestos_overlay.py` — the complete pipeline (Python 3.11, ~160 lines, no dependencies beyond the standard library)
 - `asbestos_risk_districts.json` — the full derived dataset (313 districts, Fukuoka Prefecture)
 - `README.md` — field schema, methodology summary, reproduction instructions
