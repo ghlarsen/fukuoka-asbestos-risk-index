@@ -197,27 +197,6 @@ def make_figure(gdf: gpd.GeoDataFrame, muni_scores: dict) -> None:
             subset.plot(ax=ax, color=RISK_COLORS[level],
                         edgecolor="#333333", linewidth=0.8)
 
-    # Ward name labels
-    ward_labels = {
-        "40131": "Higashi",
-        "40132": "Hakata",
-        "40133": "Chuo",
-        "40134": "Minami",
-        "40135": "Nishi",
-        "40136": "Jonan",
-        "40137": "Sawara",
-    }
-    for _, row in scored.iterrows():
-        code    = row[code_col]
-        label   = ward_labels.get(code, "")
-        centroid = row.geometry.centroid
-        if x0 < centroid.x < x1 and y0 < centroid.y < y1:
-            ax.text(
-                centroid.x, centroid.y, label,
-                ha="center", va="center",
-                fontsize=6.5, color="#111111",
-                fontweight="bold",
-            )
 
     # ---- Legend -------------------------------------------------------------
     legend_patches = [
