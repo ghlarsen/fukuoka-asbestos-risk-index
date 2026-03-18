@@ -8,7 +8,7 @@ Torii Property Platform, Fukuoka, Japan
 
 ## Abstract
 
-Japan faces a convergence of two unresolved public health challenges: an estimated 2.8–3 million private buildings containing asbestos-related materials (MLIT; IBAS), and a growing wave of demolition and renovation driven by the nation's 9 million vacant homes (akiya). Pre-demolition asbestos surveys are now legally mandatory, yet no spatial risk data exists to guide regulatory prioritisation, contractor preparedness, or purchaser decision-making at the district or property level. We present a construction-era risk index for residential districts using building construction year data from the MLIT Real Estate Information Library (不動産情報ライブラリ), applied to Fukuoka Prefecture as a case study. A five-tier scoring model anchored to Japan's regulatory history — in which construction before 1975 is assigned maximum risk — was applied to 18,006 transactions across 313 districts. The resulting index assigns risk levels (very high through low) to every district with sufficient data and is offered to MLIT and Fukuoka City for integration into the 重ねるハザードマップ geospatial infrastructure. This approach is reproducible, uses entirely public data, and is scalable nationally. We argue that its adoption into existing government spatial frameworks would meaningfully accelerate the regulatory goal of compliant asbestos management ahead of Japan's coming demolition wave.
+Japan faces a convergence of two unresolved public health challenges: an estimated 2.8–3 million private buildings containing asbestos-related materials (MLIT; IBAS), and a growing wave of demolition and renovation driven by the nation's 9 million vacant homes (akiya). Pre-demolition asbestos surveys are now legally mandatory, yet no spatial risk data exists to guide regulatory prioritisation, contractor preparedness, or purchaser decision-making at the district or property level. We present a construction-era risk index for residential districts using building construction year data from the MLIT Real Estate Information Library (不動産情報ライブラリ), applied to Fukuoka Prefecture as a case study. A five-tier scoring model anchored to Japan's regulatory history — in which construction before 1975 is assigned maximum risk — was applied to 31,184 transactions across 1,360 districts in 51 municipalities. The resulting index assigns risk levels (very high through low) to every district with sufficient data and is offered to MLIT and Fukuoka City for integration into the 重ねるハザードマップ geospatial infrastructure. This approach is reproducible, uses entirely public data, and is scalable nationally. We argue that its adoption into existing government spatial frameworks would meaningfully accelerate the regulatory goal of compliant asbestos management ahead of Japan's coming demolition wave.
 
 ---
 
@@ -79,7 +79,7 @@ The primary data source is the **MLIT Real Estate Information Library (不動産
 - `ward_name`: Ward name where applicable
 - `Structure`: Building structure type (木造, RC, SRC, S造, etc.)
 
-The full Fukuoka dataset contains 20,777 transaction records. Records without a parseable `BuildingYear` value (2,771 records) were excluded. This left 18,006 records for analysis.
+The full Fukuoka Prefecture dataset contains 44,030 transaction records across all 51 municipalities that returned data. Records without a parseable `BuildingYear` value (12,083 records, 27.4%) were excluded, leaving 31,947 records with valid construction year data. A further 763 records in districts with fewer than three contributing records were excluded per the district minimum threshold (Section 2.2). This left 31,184 records across 1,360 districts for analysis.
 
 An alternative source of construction year data for the residential building stock is the Ministry of Internal Affairs and Communications (MIC) Housing and Land Survey (住宅・土地統計調査), conducted every five years. The MIC survey has broader coverage in principle — it includes non-transacted properties — but it is a sample survey, whereas the MLIT transaction dataset is a record of actual transactions. The MLIT source has the advantage of annual updates, 丁目-level geographic granularity, and a direct link to the property transaction context (i.e., properties that will change hands and are most likely to be subject to renovations). The MLIT dataset is also the authority from which transaction-level risk disclosures would naturally flow. Assessing the representativeness of MLIT transaction data against the full MIC building stock profile is a valuable target for future validation work.
 
@@ -158,27 +158,27 @@ The pipeline is implemented in Python (v3.11) and is fully reproducible from the
 
 ### 3.1 Coverage
 
-The analysis produced risk scores for **313 districts** across Fukuoka Prefecture, comprising **18,006 transactions** (buildings). The geographic scope covers Fukuoka City's seven wards (Chuo, Hakata, Higashi, Minami, Nishi, Sawara, Jonan), the major surrounding cities (Kitakyushu, Fukuoka, Itoshima, Kasuga, Onojo, Dazaifu, Chikushino, Koga, and others), and smaller municipalities across the prefecture.
+The analysis produced risk scores for **1,360 districts** across **51 municipalities** in Fukuoka Prefecture, comprising **31,184 transactions** (buildings). The geographic scope covers Fukuoka City's seven wards (Chuo, Hakata, Higashi, Minami, Nishi, Sawara, Jonan), Kitakyushu City's five wards, and all major cities and towns in the prefecture — including Kurume, Itoshima, Chikushino, Kasuga, Onojo, Dazaifu, Koga, Omuta, Iizuka, Munakata, Asakura, and smaller municipalities.
 
-Mean district sample size is 57.5 buildings (range: 3–492). The largest districts by transaction volume are concentrated in Fukuoka City's central wards, reflecting denser property transaction activity.
+Mean district sample size is 22.9 buildings (range: 3–340). The largest districts by transaction volume are concentrated in Fukuoka City's central wards, reflecting denser property transaction activity.
 
 ### 3.2 Risk Distribution
 
-The 313 scored districts distribute across risk levels as follows:
+The 1,360 scored districts distribute across risk levels as follows:
 
 | Risk Level | Districts | Proportion |
 |------------|-----------|------------|
-| Very High | 10 | 3.2% |
-| High | 15 | 4.8% |
-| Elevated | 123 | 39.3% |
-| Low-Moderate | 132 | 42.2% |
-| Low | 33 | 10.5% |
+| Very High | 116 | 8.5% |
+| High | 192 | 14.1% |
+| Elevated | 436 | 32.1% |
+| Low-Moderate | 455 | 33.5% |
+| Low | 161 | 11.8% |
 
-**Key finding**: 89% of scored districts received a risk classification of low_moderate or above — only 33 of 313 districts (10.5%) scored as genuinely low risk. Districts in the elevated-or-higher categories (very_high + high + elevated) account for 47.3% of all scored districts, reflecting the significant proportion of Fukuoka's building stock constructed during the peak asbestos era of 1955–1990. The 42.2% low_moderate share represents districts where asbestos use was declining but not absent — these are not safe districts, merely lower-priority ones. The 10.5% of low-risk districts are concentrated in newer development areas rather than established residential zones.
+**Key finding**: 88% of scored districts received a risk classification of low_moderate or above — only 161 of 1,360 districts (11.8%) scored as genuinely low risk. Districts in the elevated-or-higher categories (very_high + high + elevated) account for 54.7% of all scored districts, reflecting the significant proportion of Fukuoka Prefecture's building stock constructed during the peak asbestos era of 1955–1990. The 33.5% low_moderate share represents districts where asbestos use was declining but not absent — these are not safe districts, merely lower-priority ones. The 11.8% of low-risk districts are concentrated in newer development areas and rural municipalities rather than established urban residential zones.
 
 ### 3.3 Highest-Risk Districts
 
-The ten very-high-risk districts (score ≥ 75) are concentrated in areas with predominantly pre-1975 building stock, particularly in older parts of Fukuoka City's central wards and in early post-war public housing estates. These districts exhibit average construction years ranging from 1967 to 1974 and are dominated by SRC and RC structure types — indicating a meaningful probability of Level 1 spray asbestos in addition to Level 3 bound materials.
+The 116 very-high-risk districts (score ≥ 75) are concentrated in areas with predominantly pre-1975 building stock, particularly in older parts of Fukuoka City's central wards, Kitakyushu City's industrial zones, and early post-war public housing estates across the prefecture. These districts are dominated by SRC and RC structure types — indicating a meaningful probability of Level 1 spray asbestos in addition to Level 3 bound materials.
 
 District-level detail is provided in the full dataset (see data release).
 
@@ -354,7 +354,7 @@ Risk overlay data of the type presented here can help target surveyor training i
 
 Japan's coming demolition wave will mobilise tens of thousands of tonnes of asbestos-containing materials over the next two to three decades. The regulatory infrastructure to manage this safely — mandatory surveys, qualified surveyors, a reporting system, an effective total ban — is largely in place. What is missing is the spatial intelligence to deploy these resources efficiently and to place meaningful risk information in the hands of akiya purchasers before they commit to a transaction.
 
-This paper presents the first systematic methodology for generating a construction-era asbestos risk index for residential districts in Japan, applied as a case study to Fukuoka Prefecture. Using construction year data from the MLIT's own transaction records — public, open-licensed, and updated annually — we score 18,006 transactions across 313 districts. The results reveal that 89% of scored districts carry a risk classification of low_moderate or above, and only 10.5% scored as genuinely low risk — consistent with Japan's 50-year history of near-universal ACM use in building construction.
+This paper presents the first systematic methodology for generating a construction-era asbestos risk index for residential districts in Japan, applied as a case study to Fukuoka Prefecture. Using construction year data from the MLIT's own transaction records — public, open-licensed, and updated annually — we score 31,184 transactions across 1,360 districts in 51 municipalities. The results reveal that 88% of scored districts carry a risk classification of low_moderate or above, and only 11.8% scored as genuinely low risk — consistent with Japan's 50-year history of near-universal ACM use in building construction.
 
 The methodology is simple, reproducible, and transparently construction-era based. The scoring algorithm is deterministic, deriving risk tiers from documented regulatory history; the approach is probabilistic in the interpretive sense that the score represents a prior estimate of ACM likelihood that can be updated as survey data accumulates. It does not claim to replace laboratory surveys. It claims to provide the first-ever spatial signal for where surveys are most needed and what contractors are most likely to encounter — at no additional data cost to government, using infrastructure MLIT already maintains.
 
@@ -368,7 +368,7 @@ The 9 million vacant homes across Japan are not an abstract policy problem. They
 
 All code and derived data supporting this paper are available in the public research repository at https://github.com/ghlarsen/fukuoka-asbestos-risk-index (release tag: `v1.0.0`; DOI: https://doi.org/10.5281/zenodo.19087985). The repository contains:
 - `build_asbestos_overlay.py` — the complete pipeline (Python 3.11, ~160 lines, no dependencies beyond the standard library)
-- `asbestos_risk_districts.json` — the full derived dataset (313 districts, Fukuoka Prefecture)
+- `asbestos_risk_districts.json` — the full derived dataset (1,360 districts, 51 municipalities, Fukuoka Prefecture)
 - `README.md` — field schema, methodology summary, reproduction instructions
 
 The derived dataset is released under CC BY 4.0. Source data: MLIT Real Estate Information Library (不動産情報ライブラリ), available under open government data licence at https://www.reinfolib.mlit.go.jp/. The source CSV is not redistributed here; it is freely downloadable from MLIT under the standard open data terms.
