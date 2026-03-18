@@ -1,5 +1,7 @@
 # Fukuoka Asbestos Risk Index
 
+[![DOI](https://zenodo.org/badge/1185157267.svg)](https://doi.org/10.5281/zenodo.19087985)
+
 **A Construction-Era Asbestos Risk Index for Residential Districts in Fukuoka Prefecture Using MLIT Transaction Data**
 
 Sebastian Larsen, Torii Property Platform, Fukuoka, Japan
@@ -96,7 +98,7 @@ Methodology paper: © Sebastian Larsen, all rights reserved pending journal assi
 
 ## Citation
 
-> Larsen S. A Construction-Era Asbestos Risk Index for Residential Districts in Fukuoka Prefecture Using MLIT Transaction Data. 2026. DOI: [to be assigned via Zenodo]
+> Larsen S. A Construction-Era Asbestos Risk Index for Residential Districts in Fukuoka Prefecture Using MLIT Transaction Data. 2026. DOI: 10.5281/zenodo.19087985
 
 ---
 
