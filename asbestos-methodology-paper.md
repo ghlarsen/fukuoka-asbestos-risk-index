@@ -137,7 +137,7 @@ The threshold values are not derived from empirical calibration against survey d
 
 Building structure type (木造, RC, SRC, S造, 軽量鉄骨造) is recorded in the dataset and provides a meaningful supplementary signal, though it does not modify the primary risk score in this model.
 
-The critical distinction is between wood-frame (木造) and concrete or steel-frame (RC, SRC, S造) construction. Level 1 spray asbestos — the most hazardous category under Japanese regulation — was applied almost exclusively to steel and concrete structural elements as fireproofing. Its presence in detached wood-frame houses is rare. Therefore:
+The critical distinction is between wood-frame (木造) and concrete or steel-frame (RC, SRC, S造) construction. Level 1 spray asbestos — the most hazardous category under Japanese regulation — was applied almost exclusively to steel and concrete structural elements as fireproofing. The Ministry of Health, Labour and Welfare's official guidance states that spray asbestos "is not normally used in detached houses" (通常、戸建て住宅では使用されていません), and its application is described as specific to "relatively large-scale steel-frame buildings" (比較的規模の大きい鉄骨造の建築物) (MHLW Asbestos Q&A). Its presence in detached wood-frame houses is therefore not expected under standard construction practice, though isolated instances (steel fittings, boiler rooms, mixed-structure elements) cannot be fully excluded without physical survey. Therefore:
 
 - Surveys of RC and SRC buildings from before 1975 must specifically investigate Level 1 spray asbestos in addition to the Level 3 bound materials that dominate residential construction.
 - Surveys of 木造 buildings can generally assume Level 3 materials only, though this assumption should be confirmed.
@@ -446,6 +446,8 @@ The derived dataset is released under CC BY 4.0. Source data: MLIT Real Estate I
 30. Toyama N. Japan's asbestos analytical method fails ISO requirements. International Ban Asbestos Secretariat. 30 September 2010. https://ibasecretariat.org/tn_japan_asb_anal_meth_fails_iso_req.php [Account by Tokyo Occupational Safety and Health Center occupational consultant documenting the ISO TC146/SC3 blind-sample validation exercise; reports ~47% failure rate; ISO working group vote 10:1 to reject JIS method; Japan's subsequent refusal of a second validation. Not peer-reviewed; represents the most primary public document of the ISO process.]
 
 31. International Consortium of Investigative Journalists (ICIJ) / Center for Public Integrity. Faulty findings may add to 100,000 death toll in Japan. *Dangers in the Dust*. [Journalistic report based on the same ISO TC146 working group process described in ref 30; quotes the failure rate as 6/15 (40%). Not peer-reviewed; directionally consistent with peer-reviewed evidence on method sensitivity limitations (see refs 3–5) and consistent with the exclusion of XRD/DS-PCM from the published ISO 22262-1:2012 standard.]
+
+32. Ministry of Health, Labour and Welfare (厚生労働省). アスベスト（石綿）に関するQ&A. https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/sekimen/topics/tp050729-1.html [Official MHLW guidance: "吹き付けアスベストは、通常、戸建て住宅では使用されていません" (spray asbestos is not normally used in detached houses); application described as specific to 鉄骨造 structural fireproofing. Cited for structure-type inference on Level 1 absence in 木造 residential construction.]
 
 ---
 
