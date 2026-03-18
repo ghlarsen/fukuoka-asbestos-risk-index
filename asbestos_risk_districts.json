@@ -1,0 +1,7295 @@
+{
+  "meta": {
+    "source": "MLIT Real Estate Information Library (不動産情報ライブラリ)",
+    "source_file": "fukuoka_transactions_2024.csv",
+    "total_transactions": 18006,
+    "districts_scored": 313,
+    "min_buildings_threshold": 3,
+    "risk_model": {
+      "pre_1975": "very_high (100 pts)",
+      "1975_1989": "high (75 pts)",
+      "1990_1999": "elevated (50 pts)",
+      "2000_2005": "low_moderate (25 pts)",
+      "post_2006": "low (0 pts)"
+    },
+    "score_thresholds": {
+      "very_high": ">= 75",
+      "high": ">= 55",
+      "elevated": ">= 35",
+      "low_moderate": ">= 15",
+      "low": "< 15"
+    },
+    "generated_by": "torii/data/build_asbestos_overlay.py"
+  },
+  "districts": [
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "古小烏町",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 4,
+      "avg_year_built": 1974,
+      "risk_score": 100.0,
+      "risk_level": "very_high",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＳＲＣ": 4
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "原団地",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 3,
+      "avg_year_built": 1967,
+      "risk_score": 100.0,
+      "risk_level": "very_high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＲＣ": 3
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "金山団地",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 18,
+      "avg_year_built": 1971,
+      "risk_score": 98.6,
+      "risk_level": "very_high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 17,
+        "1975_1989": 1,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＲＣ": 18
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "大字志賀島",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 3,
+      "avg_year_built": 1974,
+      "risk_score": 91.7,
+      "risk_level": "very_high",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 1,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "木造": 2,
+        "ＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "大字宮浦",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 3,
+      "avg_year_built": 1977,
+      "risk_score": 83.3,
+      "risk_level": "very_high",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 2,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "木造": 3
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "祇園町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 28,
+      "avg_year_built": 1981,
+      "risk_score": 76.8,
+      "risk_level": "very_high",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 7,
+        "1975_1989": 16,
+        "1990_1999": 5,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＳＲＣ": 14,
+        "ＲＣ": 14
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "奈多団地",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 32,
+      "avg_year_built": 1979,
+      "risk_score": 75.0,
+      "risk_level": "very_high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 32,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＲＣ": 31
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "十郎川団地",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 10,
+      "avg_year_built": 1980,
+      "risk_score": 75.0,
+      "risk_level": "very_high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 10,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＲＣ": 10
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "大町団地",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 18,
+      "avg_year_built": 1978,
+      "risk_score": 75.0,
+      "risk_level": "very_high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 18,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＲＣ": 18
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "城の原団地",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 10,
+      "avg_year_built": 1980,
+      "risk_score": 75.0,
+      "risk_level": "very_high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 10,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＲＣ": 10
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "市崎",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 34,
+      "avg_year_built": 1985,
+      "risk_score": 72.1,
+      "risk_level": "high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 19,
+        "1975_1989": 5,
+        "1990_1999": 3,
+        "2000_2005": 1,
+        "post_2006": 6
+      },
+      "structures": {
+        "木造": 5,
+        "ＲＣ": 26,
+        "鉄骨造": 1,
+        "ＳＲＣ": 1,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "筥松新町",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 5,
+      "avg_year_built": 1986,
+      "risk_score": 70.0,
+      "risk_level": "high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 4,
+        "1990_1999": 1,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "鉄骨造": 1,
+        "ＲＣ": 4
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "福浜",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 22,
+      "avg_year_built": 1985,
+      "risk_score": 69.3,
+      "risk_level": "high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 12,
+        "1975_1989": 3,
+        "1990_1999": 2,
+        "2000_2005": 0,
+        "post_2006": 5
+      },
+      "structures": {
+        "ＲＣ": 15,
+        "木造": 7
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "東油山",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 57,
+      "avg_year_built": 1986,
+      "risk_score": 68.4,
+      "risk_level": "high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 27,
+        "1975_1989": 4,
+        "1990_1999": 17,
+        "2000_2005": 2,
+        "post_2006": 7
+      },
+      "structures": {
+        "ＲＣ": 41,
+        "木造": 11,
+        "ＳＲＣ": 3,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "多の津",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 29,
+      "avg_year_built": 1986,
+      "risk_score": 66.4,
+      "risk_level": "high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 5,
+        "1975_1989": 16,
+        "1990_1999": 4,
+        "2000_2005": 1,
+        "post_2006": 3
+      },
+      "structures": {
+        "ＳＲＣ": 2,
+        "ＲＣ": 18,
+        "鉄骨造": 7,
+        "木造": 2
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "みどりが丘",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 8,
+      "avg_year_built": 1989,
+      "risk_score": 65.6,
+      "risk_level": "high",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 5,
+        "1990_1999": 3,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "木造": 7
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "多賀",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 46,
+      "avg_year_built": 1988,
+      "risk_score": 64.1,
+      "risk_level": "high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 20,
+        "1975_1989": 8,
+        "1990_1999": 7,
+        "2000_2005": 0,
+        "post_2006": 11
+      },
+      "structures": {
+        "木造": 4,
+        "ＲＣ": 42
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "浄水通",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 15,
+      "avg_year_built": 1984,
+      "risk_score": 63.3,
+      "risk_level": "high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 7,
+        "1990_1999": 0,
+        "2000_2005": 5,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＲＣ": 15
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "黒門",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 52,
+      "avg_year_built": 1990,
+      "risk_score": 60.6,
+      "risk_level": "high",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 20,
+        "1990_1999": 25,
+        "2000_2005": 0,
+        "post_2006": 3
+      },
+      "structures": {
+        "ＲＣ": 16,
+        "ＳＲＣ": 34,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "大字徳永",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 5,
+      "avg_year_built": 1989,
+      "risk_score": 60.0,
+      "risk_level": "high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 4,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 1
+      },
+      "structures": {
+        "ＲＣ": 4,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "長尾",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 115,
+      "avg_year_built": 1989,
+      "risk_score": 57.4,
+      "risk_level": "high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 20,
+        "1975_1989": 31,
+        "1990_1999": 36,
+        "2000_2005": 19,
+        "post_2006": 9
+      },
+      "structures": {
+        "ＲＣ": 101,
+        "木造": 9,
+        "ＳＲＣ": 3,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "今宿上ノ原",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 4,
+      "avg_year_built": 1990,
+      "risk_score": 56.2,
+      "risk_level": "high",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 1,
+        "1990_1999": 1,
+        "2000_2005": 0,
+        "post_2006": 1
+      },
+      "structures": {
+        "木造": 2,
+        "軽量鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "大字名子",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 4,
+      "avg_year_built": 1993,
+      "risk_score": 56.2,
+      "risk_level": "high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 1,
+        "1990_1999": 3,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＲＣ": 3,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "筑紫丘",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 40,
+      "avg_year_built": 1992,
+      "risk_score": 55.6,
+      "risk_level": "high",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 6,
+        "1975_1989": 13,
+        "1990_1999": 10,
+        "2000_2005": 6,
+        "post_2006": 5
+      },
+      "structures": {
+        "ＲＣ": 24,
+        "ＳＲＣ": 8,
+        "木造": 7,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "戸切",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 5,
+      "avg_year_built": 1993,
+      "risk_score": 55.0,
+      "risk_level": "high",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 3,
+        "1990_1999": 1,
+        "2000_2005": 0,
+        "post_2006": 1
+      },
+      "structures": {
+        "木造": 4
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "元町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 36,
+      "avg_year_built": 1990,
+      "risk_score": 54.9,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 16,
+        "1990_1999": 15,
+        "2000_2005": 1,
+        "post_2006": 4
+      },
+      "structures": {
+        "ＲＣ": 24,
+        "ＳＲＣ": 11,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "御島崎",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 27,
+      "avg_year_built": 1992,
+      "risk_score": 54.6,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 17,
+        "1990_1999": 0,
+        "2000_2005": 8,
+        "post_2006": 2
+      },
+      "structures": {
+        "ＲＣ": 26,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "脇山",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 11,
+      "avg_year_built": 1990,
+      "risk_score": 54.5,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 6,
+        "1990_1999": 1,
+        "2000_2005": 0,
+        "post_2006": 3
+      },
+      "structures": {
+        "木造": 10
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "谷",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 40,
+      "avg_year_built": 1993,
+      "risk_score": 54.4,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 24,
+        "1990_1999": 4,
+        "2000_2005": 3,
+        "post_2006": 8
+      },
+      "structures": {
+        "木造": 11,
+        "ＲＣ": 21,
+        "ＳＲＣ": 7,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "青木",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 27,
+      "avg_year_built": 1994,
+      "risk_score": 53.7,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 6,
+        "1990_1999": 20,
+        "2000_2005": 0,
+        "post_2006": 1
+      },
+      "structures": {
+        "ＲＣ": 26,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "大名",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 120,
+      "avg_year_built": 1991,
+      "risk_score": 53.3,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 68,
+        "1990_1999": 17,
+        "2000_2005": 2,
+        "post_2006": 29
+      },
+      "structures": {
+        "ＲＣ": 50,
+        "ＳＲＣ": 66,
+        "木造": 2,
+        "軽量鉄骨造": 1,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "寺塚",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 69,
+      "avg_year_built": 1995,
+      "risk_score": 53.3,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 7,
+        "1975_1989": 31,
+        "1990_1999": 11,
+        "2000_2005": 4,
+        "post_2006": 16
+      },
+      "structures": {
+        "木造": 13,
+        "ＲＣ": 51,
+        "軽量鉄骨造": 4,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "壱岐団地",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 16,
+      "avg_year_built": 1991,
+      "risk_score": 53.1,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 10,
+        "1990_1999": 2,
+        "2000_2005": 0,
+        "post_2006": 4
+      },
+      "structures": {
+        "ＲＣ": 15,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "四箇田団地",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 24,
+      "avg_year_built": 1990,
+      "risk_score": 53.1,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 17,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 7
+      },
+      "structures": {
+        "ＲＣ": 16,
+        "木造": 7,
+        "ＳＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "春町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 9,
+      "avg_year_built": 1996,
+      "risk_score": 52.8,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 6,
+        "1990_1999": 0,
+        "2000_2005": 1,
+        "post_2006": 2
+      },
+      "structures": {
+        "木造": 3,
+        "ＲＣ": 4,
+        "ＳＲＣ": 2
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "高取",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 73,
+      "avg_year_built": 1993,
+      "risk_score": 52.7,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 6,
+        "1975_1989": 32,
+        "1990_1999": 16,
+        "2000_2005": 2,
+        "post_2006": 17
+      },
+      "structures": {
+        "ＲＣ": 51,
+        "木造": 3,
+        "ＳＲＣ": 16,
+        "鉄骨造": 1,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "光丘町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 16,
+      "avg_year_built": 1992,
+      "risk_score": 51.6,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 7,
+        "1990_1999": 6,
+        "2000_2005": 0,
+        "post_2006": 3
+      },
+      "structures": {
+        "ＲＣ": 14,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "向野",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 81,
+      "avg_year_built": 1995,
+      "risk_score": 51.5,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 47,
+        "1990_1999": 10,
+        "2000_2005": 6,
+        "post_2006": 18
+      },
+      "structures": {
+        "木造": 5,
+        "ＲＣ": 63,
+        "ＳＲＣ": 9,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "西月隈",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 38,
+      "avg_year_built": 1995,
+      "risk_score": 50.7,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 17,
+        "1990_1999": 11,
+        "2000_2005": 0,
+        "post_2006": 9
+      },
+      "structures": {
+        "ＲＣ": 22,
+        "木造": 7,
+        "ＳＲＣ": 7,
+        "鉄骨造": 1,
+        "鉄骨造、木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "愛宕",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 106,
+      "avg_year_built": 1993,
+      "risk_score": 50.2,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 22,
+        "1975_1989": 24,
+        "1990_1999": 19,
+        "2000_2005": 15,
+        "post_2006": 26
+      },
+      "structures": {
+        "ＳＲＣ": 40,
+        "木造": 17,
+        "ＲＣ": 49
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "大字上和白",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 14,
+      "avg_year_built": 1993,
+      "risk_score": 50.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 14,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＲＣ": 14
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "社領",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 28,
+      "avg_year_built": 1990,
+      "risk_score": 50.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 4,
+        "1990_1999": 22,
+        "2000_2005": 0,
+        "post_2006": 2
+      },
+      "structures": {
+        "木造": 5,
+        "ＲＣ": 11,
+        "ＳＲＣ": 9,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "大字板付",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 3,
+      "avg_year_built": 1991,
+      "risk_score": 50.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 3,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＳＲＣ": 3
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "那の津",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 7,
+      "avg_year_built": 1990,
+      "risk_score": 50.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 2,
+        "1990_1999": 0,
+        "2000_2005": 4,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＲＣ": 5,
+        "鉄骨造": 1,
+        "ＳＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "舞鶴",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 90,
+      "avg_year_built": 1993,
+      "risk_score": 50.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 47,
+        "1990_1999": 3,
+        "2000_2005": 17,
+        "post_2006": 19
+      },
+      "structures": {
+        "ＲＣ": 35,
+        "ＳＲＣ": 54,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "大字周船寺",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 7,
+      "avg_year_built": 1994,
+      "risk_score": 50.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 7,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＲＣ": 7
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "大字飯氏",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 4,
+      "avg_year_built": 1999,
+      "risk_score": 50.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 4,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＲＣ": 4
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "堤",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 5,
+      "avg_year_built": 1994,
+      "risk_score": 50.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 1,
+        "1990_1999": 1,
+        "2000_2005": 1,
+        "post_2006": 1
+      },
+      "structures": {
+        "木造": 2,
+        "ＲＣ": 3
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "飯倉",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 7,
+      "avg_year_built": 1995,
+      "risk_score": 50.0,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 2,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 3
+      },
+      "structures": {
+        "木造": 6,
+        "ＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "貝塚団地",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 5,
+      "avg_year_built": 1994,
+      "risk_score": 50.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 5,
+        "2000_2005": 0,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＲＣ": 5
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "横手",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 68,
+      "avg_year_built": 1996,
+      "risk_score": 49.6,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 32,
+        "1990_1999": 16,
+        "2000_2005": 3,
+        "post_2006": 16
+      },
+      "structures": {
+        "ＲＣ": 37,
+        "木造": 17,
+        "ＳＲＣ": 12,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "福重",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 61,
+      "avg_year_built": 1996,
+      "risk_score": 49.2,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 30,
+        "1990_1999": 15,
+        "2000_2005": 0,
+        "post_2006": 16
+      },
+      "structures": {
+        "ＲＣ": 33,
+        "木造": 18,
+        "ＳＲＣ": 5,
+        "軽量鉄骨造": 1,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "向新町",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 24,
+      "avg_year_built": 1992,
+      "risk_score": 49.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 12,
+        "1990_1999": 4,
+        "2000_2005": 3,
+        "post_2006": 5
+      },
+      "structures": {
+        "木造": 7,
+        "ＲＣ": 14,
+        "ＳＲＣ": 2
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "那の川",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 35,
+      "avg_year_built": 1994,
+      "risk_score": 48.6,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 8,
+        "1975_1989": 11,
+        "1990_1999": 0,
+        "2000_2005": 3,
+        "post_2006": 13
+      },
+      "structures": {
+        "軽量鉄骨造": 1,
+        "ＳＲＣ": 16,
+        "木造": 4,
+        "鉄骨造": 2,
+        "ＲＣ": 11
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "奈多",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 46,
+      "avg_year_built": 1994,
+      "risk_score": 48.4,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 10,
+        "1990_1999": 23,
+        "2000_2005": 5,
+        "post_2006": 6
+      },
+      "structures": {
+        "ＲＣ": 22,
+        "木造": 14,
+        "ＳＲＣ": 10
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "今泉",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 97,
+      "avg_year_built": 1996,
+      "risk_score": 47.9,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 5,
+        "1975_1989": 23,
+        "1990_1999": 38,
+        "2000_2005": 21,
+        "post_2006": 10
+      },
+      "structures": {
+        "ＳＲＣ": 51,
+        "ＲＣ": 42,
+        "木造": 4
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "今川",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 58,
+      "avg_year_built": 1995,
+      "risk_score": 47.8,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 20,
+        "1990_1999": 18,
+        "2000_2005": 7,
+        "post_2006": 11
+      },
+      "structures": {
+        "ＳＲＣ": 4,
+        "木造": 8,
+        "ＲＣ": 39,
+        "鉄骨造": 7
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "高宮",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 151,
+      "avg_year_built": 1995,
+      "risk_score": 47.5,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 16,
+        "1975_1989": 52,
+        "1990_1999": 26,
+        "2000_2005": 15,
+        "post_2006": 42
+      },
+      "structures": {
+        "ＳＲＣ": 27,
+        "ＲＣ": 111,
+        "鉄骨造": 1,
+        "木造": 7,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "弥生",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 18,
+      "avg_year_built": 1996,
+      "risk_score": 47.2,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 8,
+        "1990_1999": 2,
+        "2000_2005": 6,
+        "post_2006": 2
+      },
+      "structures": {
+        "ＲＣ": 12,
+        "ＳＲＣ": 2,
+        "木造": 3,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "上川端町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 17,
+      "avg_year_built": 1994,
+      "risk_score": 47.1,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 3,
+        "1990_1999": 0,
+        "2000_2005": 11,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＳＲＣ": 10,
+        "ＲＣ": 5,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "金の隈",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 50,
+      "avg_year_built": 1996,
+      "risk_score": 47.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 10,
+        "1990_1999": 27,
+        "2000_2005": 2,
+        "post_2006": 9
+      },
+      "structures": {
+        "ＲＣ": 28,
+        "木造": 13,
+        "鉄骨造": 8,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "桧原",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 47,
+      "avg_year_built": 1996,
+      "risk_score": 46.8,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 6,
+        "1975_1989": 12,
+        "1990_1999": 14,
+        "2000_2005": 0,
+        "post_2006": 15
+      },
+      "structures": {
+        "木造": 29,
+        "ＲＣ": 16,
+        "軽量鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "東入部",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 23,
+      "avg_year_built": 1999,
+      "risk_score": 46.7,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 11,
+        "1990_1999": 3,
+        "2000_2005": 0,
+        "post_2006": 8
+      },
+      "structures": {
+        "木造": 20,
+        "ＳＲＣ": 1,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "神松寺",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 40,
+      "avg_year_built": 1997,
+      "risk_score": 45.6,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 3,
+        "1990_1999": 32,
+        "2000_2005": 0,
+        "post_2006": 5
+      },
+      "structures": {
+        "木造": 9,
+        "ＳＲＣ": 2,
+        "ＲＣ": 28,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "香椎駅前",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 73,
+      "avg_year_built": 1996,
+      "risk_score": 45.5,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 29,
+        "1990_1999": 12,
+        "2000_2005": 6,
+        "post_2006": 22
+      },
+      "structures": {
+        "ＲＣ": 42,
+        "木造": 6,
+        "鉄骨造": 4,
+        "ＳＲＣ": 20
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "博多駅東",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 61,
+      "avg_year_built": 1994,
+      "risk_score": 45.5,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 22,
+        "1990_1999": 4,
+        "2000_2005": 21,
+        "post_2006": 10
+      },
+      "structures": {
+        "ＲＣ": 25,
+        "ＳＲＣ": 34,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "今宿駅前",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 28,
+      "avg_year_built": 1997,
+      "risk_score": 45.5,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 11,
+        "1990_1999": 6,
+        "2000_2005": 6,
+        "post_2006": 5
+      },
+      "structures": {
+        "木造": 3,
+        "ＲＣ": 19,
+        "軽量鉄骨造": 2,
+        "ＳＲＣ": 4
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "二又瀬新町",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 16,
+      "avg_year_built": 1999,
+      "risk_score": 45.3,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 5,
+        "1990_1999": 7,
+        "2000_2005": 0,
+        "post_2006": 4
+      },
+      "structures": {
+        "木造": 2,
+        "ＲＣ": 12,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "早良",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 16,
+      "avg_year_built": 1995,
+      "risk_score": 45.3,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 6,
+        "1990_1999": 5,
+        "2000_2005": 1,
+        "post_2006": 4
+      },
+      "structures": {
+        "木造": 8,
+        "軽量鉄骨造": 7,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "半道橋",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 30,
+      "avg_year_built": 1997,
+      "risk_score": 45.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 7,
+        "1990_1999": 15,
+        "2000_2005": 3,
+        "post_2006": 5
+      },
+      "structures": {
+        "鉄骨造": 4,
+        "ＲＣ": 25,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "東雲町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 5,
+      "avg_year_built": 1996,
+      "risk_score": 45.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 1,
+        "1990_1999": 3,
+        "2000_2005": 0,
+        "post_2006": 1
+      },
+      "structures": {
+        "ＲＣ": 4,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "荒江",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 74,
+      "avg_year_built": 1995,
+      "risk_score": 44.9,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 15,
+        "1975_1989": 10,
+        "1990_1999": 21,
+        "2000_2005": 1,
+        "post_2006": 27
+      },
+      "structures": {
+        "ＲＣ": 61,
+        "木造": 7,
+        "鉄骨造": 2,
+        "ＳＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "南庄",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 103,
+      "avg_year_built": 1994,
+      "risk_score": 44.9,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 52,
+        "1990_1999": 6,
+        "2000_2005": 5,
+        "post_2006": 37
+      },
+      "structures": {
+        "ＲＣ": 64,
+        "木造": 23,
+        "ＳＲＣ": 11,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "荒戸",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 317,
+      "avg_year_built": 1995,
+      "risk_score": 44.7,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 114,
+        "1990_1999": 96,
+        "2000_2005": 29,
+        "post_2006": 77
+      },
+      "structures": {
+        "ＳＲＣ": 171,
+        "ＲＣ": 144
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "平和",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 46,
+      "avg_year_built": 1995,
+      "risk_score": 44.6,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 13,
+        "1990_1999": 15,
+        "2000_2005": 1,
+        "post_2006": 14
+      },
+      "structures": {
+        "木造": 12,
+        "ＲＣ": 26,
+        "ＳＲＣ": 5,
+        "軽量鉄骨造": 1,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "荒江",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 37,
+      "avg_year_built": 1997,
+      "risk_score": 44.6,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 8,
+        "1990_1999": 17,
+        "2000_2005": 4,
+        "post_2006": 7
+      },
+      "structures": {
+        "ＲＣ": 23,
+        "木造": 5,
+        "ＳＲＣ": 8,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "竹丘町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 9,
+      "avg_year_built": 1996,
+      "risk_score": 44.4,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 2,
+        "1990_1999": 5,
+        "2000_2005": 0,
+        "post_2006": 2
+      },
+      "structures": {
+        "ＲＣ": 4,
+        "木造": 1,
+        "ＳＲＣ": 4
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "弥永",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 36,
+      "avg_year_built": 1997,
+      "risk_score": 44.4,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 8,
+        "1990_1999": 18,
+        "2000_2005": 0,
+        "post_2006": 9
+      },
+      "structures": {
+        "木造": 12,
+        "ＲＣ": 20,
+        "鉄骨造": 2,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "生の松原",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 44,
+      "avg_year_built": 1999,
+      "risk_score": 44.3,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 6,
+        "1975_1989": 13,
+        "1990_1999": 6,
+        "2000_2005": 3,
+        "post_2006": 16
+      },
+      "structures": {
+        "木造": 28,
+        "ＲＣ": 15
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "那の川",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 17,
+      "avg_year_built": 1997,
+      "risk_score": 44.1,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 4,
+        "1990_1999": 8,
+        "2000_2005": 2,
+        "post_2006": 3
+      },
+      "structures": {
+        "ＲＣ": 5,
+        "ＳＲＣ": 12
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "鶴田",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 50,
+      "avg_year_built": 2000,
+      "risk_score": 44.0,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 20,
+        "1990_1999": 5,
+        "2000_2005": 2,
+        "post_2006": 19
+      },
+      "structures": {
+        "木造": 33,
+        "ＲＣ": 12,
+        "軽量鉄骨造": 2,
+        "ＳＲＣ": 3
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "祖原",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 53,
+      "avg_year_built": 1996,
+      "risk_score": 43.9,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 18,
+        "1990_1999": 16,
+        "2000_2005": 3,
+        "post_2006": 15
+      },
+      "structures": {
+        "ＲＣ": 44,
+        "木造": 2,
+        "ＳＲＣ": 5
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "冷泉町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 60,
+      "avg_year_built": 1995,
+      "risk_score": 43.8,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 18,
+        "1990_1999": 14,
+        "2000_2005": 23,
+        "post_2006": 5
+      },
+      "structures": {
+        "ＳＲＣ": 42,
+        "ＲＣ": 15,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "空港前",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 8,
+      "avg_year_built": 1996,
+      "risk_score": 43.8,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 2,
+        "1990_1999": 4,
+        "2000_2005": 0,
+        "post_2006": 2
+      },
+      "structures": {
+        "ＲＣ": 5,
+        "木造": 3
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "和白丘",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 75,
+      "avg_year_built": 1998,
+      "risk_score": 43.3,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 10,
+        "1990_1999": 41,
+        "2000_2005": 10,
+        "post_2006": 12
+      },
+      "structures": {
+        "ＳＲＣ": 18,
+        "木造": 13,
+        "ＲＣ": 32,
+        "鉄骨造": 4,
+        "軽量鉄骨造": 4
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "梅林",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 23,
+      "avg_year_built": 1999,
+      "risk_score": 42.4,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 6,
+        "1990_1999": 5,
+        "2000_2005": 3,
+        "post_2006": 7
+      },
+      "structures": {
+        "木造": 15,
+        "軽量鉄骨造": 3,
+        "鉄骨造": 4,
+        "ＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "白金",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 100,
+      "avg_year_built": 1997,
+      "risk_score": 42.2,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 32,
+        "1990_1999": 24,
+        "2000_2005": 13,
+        "post_2006": 28
+      },
+      "structures": {
+        "ＲＣ": 75,
+        "ＳＲＣ": 22,
+        "木造": 3
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "大橋",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 199,
+      "avg_year_built": 1997,
+      "risk_score": 42.2,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 58,
+        "1990_1999": 74,
+        "2000_2005": 10,
+        "post_2006": 56
+      },
+      "structures": {
+        "ＲＣ": 117,
+        "ＳＲＣ": 67,
+        "木造": 10,
+        "軽量鉄骨造": 2,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "今宿青木",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 16,
+      "avg_year_built": 1998,
+      "risk_score": 42.2,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 1,
+        "1990_1999": 8,
+        "2000_2005": 0,
+        "post_2006": 5
+      },
+      "structures": {
+        "木造": 9,
+        "ＲＣ": 2,
+        "ＳＲＣ": 5
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "大濠",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 60,
+      "avg_year_built": 1997,
+      "risk_score": 42.1,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 13,
+        "1975_1989": 3,
+        "1990_1999": 11,
+        "2000_2005": 18,
+        "post_2006": 15
+      },
+      "structures": {
+        "ＲＣ": 53,
+        "ＳＲＣ": 6
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "有田",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 49,
+      "avg_year_built": 1996,
+      "risk_score": 41.8,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 24,
+        "1990_1999": 4,
+        "2000_2005": 2,
+        "post_2006": 19
+      },
+      "structures": {
+        "ＲＣ": 18,
+        "木造": 28,
+        "鉄骨造": 1,
+        "軽量鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "大池",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 33,
+      "avg_year_built": 1999,
+      "risk_score": 41.7,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 6,
+        "1975_1989": 5,
+        "1990_1999": 8,
+        "2000_2005": 0,
+        "post_2006": 14
+      },
+      "structures": {
+        "ＲＣ": 11,
+        "木造": 18,
+        "ＳＲＣ": 2,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "生松台",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 33,
+      "avg_year_built": 1996,
+      "risk_score": 41.7,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 27,
+        "2000_2005": 1,
+        "post_2006": 5
+      },
+      "structures": {
+        "木造": 24,
+        "軽量鉄骨造": 8,
+        "ＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "柏原",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 66,
+      "avg_year_built": 1998,
+      "risk_score": 41.3,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 5,
+        "1975_1989": 11,
+        "1990_1999": 26,
+        "2000_2005": 4,
+        "post_2006": 20
+      },
+      "structures": {
+        "木造": 39,
+        "ＲＣ": 15,
+        "ＳＲＣ": 7,
+        "木造、軽量鉄骨造": 1,
+        "軽量鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "香椎",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 117,
+      "avg_year_built": 1999,
+      "risk_score": 41.2,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 5,
+        "1975_1989": 33,
+        "1990_1999": 28,
+        "2000_2005": 18,
+        "post_2006": 33
+      },
+      "structures": {
+        "木造": 50,
+        "ＲＣ": 59,
+        "鉄骨造": 3,
+        "ＳＲＣ": 1,
+        "ＲＣ、木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "香住ヶ丘",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 60,
+      "avg_year_built": 1997,
+      "risk_score": 41.2,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 16,
+        "1990_1999": 12,
+        "2000_2005": 11,
+        "post_2006": 17
+      },
+      "structures": {
+        "木造": 32,
+        "ＲＣ": 19,
+        "ＳＲＣ": 6,
+        "軽量鉄骨造": 1,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "薬院",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 322,
+      "avg_year_built": 1997,
+      "risk_score": 41.2,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 12,
+        "1975_1989": 107,
+        "1990_1999": 52,
+        "2000_2005": 58,
+        "post_2006": 93
+      },
+      "structures": {
+        "ＳＲＣ": 171,
+        "ＲＣ": 143,
+        "鉄骨造": 5,
+        "木造": 2
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "下原",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 35,
+      "avg_year_built": 1997,
+      "risk_score": 40.7,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 6,
+        "1990_1999": 13,
+        "2000_2005": 9,
+        "post_2006": 6
+      },
+      "structures": {
+        "軽量鉄骨造": 5,
+        "木造": 13,
+        "ＲＣ": 15,
+        "鉄骨造": 1,
+        "ＳＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "南八幡町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 16,
+      "avg_year_built": 1997,
+      "risk_score": 40.6,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 13,
+        "2000_2005": 0,
+        "post_2006": 3
+      },
+      "structures": {
+        "ＲＣ": 11,
+        "ＳＲＣ": 5
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "警固",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 118,
+      "avg_year_built": 1996,
+      "risk_score": 40.5,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 11,
+        "1975_1989": 18,
+        "1990_1999": 32,
+        "2000_2005": 29,
+        "post_2006": 28
+      },
+      "structures": {
+        "ＲＣ": 73,
+        "ＳＲＣ": 41,
+        "木造": 3
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "松香台",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 13,
+      "avg_year_built": 2001,
+      "risk_score": 40.4,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 1,
+        "1990_1999": 7,
+        "2000_2005": 0,
+        "post_2006": 4
+      },
+      "structures": {
+        "木造": 4,
+        "ＲＣ": 7
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "鳥飼",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 75,
+      "avg_year_built": 1998,
+      "risk_score": 40.3,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 21,
+        "1990_1999": 15,
+        "2000_2005": 12,
+        "post_2006": 23
+      },
+      "structures": {
+        "ＲＣ": 62,
+        "ＳＲＣ": 9,
+        "木造": 3,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "周船寺",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 66,
+      "avg_year_built": 1998,
+      "risk_score": 40.2,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 14,
+        "1990_1999": 31,
+        "2000_2005": 2,
+        "post_2006": 19
+      },
+      "structures": {
+        "ＲＣ": 39,
+        "鉄骨造": 1,
+        "ＳＲＣ": 13,
+        "木造": 12
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "香椎台",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 25,
+      "avg_year_built": 1999,
+      "risk_score": 40.0,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 10,
+        "1990_1999": 2,
+        "2000_2005": 6,
+        "post_2006": 7
+      },
+      "structures": {
+        "木造": 20,
+        "鉄骨造": 1,
+        "軽量鉄骨造": 2,
+        "ＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "山王",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 10,
+      "avg_year_built": 1998,
+      "risk_score": 40.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 1,
+        "1990_1999": 0,
+        "2000_2005": 5,
+        "post_2006": 2
+      },
+      "structures": {
+        "ＲＣ": 8,
+        "鉄骨造": 1,
+        "ＳＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "室見",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 121,
+      "avg_year_built": 1999,
+      "risk_score": 39.9,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 35,
+        "1990_1999": 27,
+        "2000_2005": 22,
+        "post_2006": 34
+      },
+      "structures": {
+        "ＲＣ": 79,
+        "木造": 21,
+        "軽量鉄骨造": 2,
+        "ＳＲＣ": 17,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "大博町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 51,
+      "avg_year_built": 1996,
+      "risk_score": 39.7,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 7,
+        "1990_1999": 28,
+        "2000_2005": 4,
+        "post_2006": 12
+      },
+      "structures": {
+        "ＳＲＣ": 36,
+        "ＲＣ": 14,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "東光",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 38,
+      "avg_year_built": 1998,
+      "risk_score": 39.5,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 8,
+        "1975_1989": 6,
+        "1990_1999": 0,
+        "2000_2005": 10,
+        "post_2006": 14
+      },
+      "structures": {
+        "ＳＲＣ": 16,
+        "ＲＣ": 21,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "寿町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 33,
+      "avg_year_built": 1997,
+      "risk_score": 39.4,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 10,
+        "1990_1999": 9,
+        "2000_2005": 0,
+        "post_2006": 13
+      },
+      "structures": {
+        "ＲＣ": 22,
+        "ＳＲＣ": 6,
+        "木造": 2,
+        "軽量鉄骨造": 1,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "松田",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 68,
+      "avg_year_built": 1997,
+      "risk_score": 39.3,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 8,
+        "1990_1999": 38,
+        "2000_2005": 7,
+        "post_2006": 15
+      },
+      "structures": {
+        "ＳＲＣ": 16,
+        "ＲＣ": 44,
+        "軽量鉄骨造": 3,
+        "木造": 4
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "昭南町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 21,
+      "avg_year_built": 1998,
+      "risk_score": 39.3,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 8,
+        "1990_1999": 0,
+        "2000_2005": 5,
+        "post_2006": 7
+      },
+      "structures": {
+        "ＲＣ": 18,
+        "木造": 3
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "東那珂",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 63,
+      "avg_year_built": 2000,
+      "risk_score": 39.3,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 15,
+        "1990_1999": 22,
+        "2000_2005": 10,
+        "post_2006": 16
+      },
+      "structures": {
+        "ＲＣ": 41,
+        "鉄骨造": 4,
+        "木造": 13,
+        "ＳＲＣ": 4,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "笹丘",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 68,
+      "avg_year_built": 1998,
+      "risk_score": 39.3,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 5,
+        "1975_1989": 15,
+        "1990_1999": 18,
+        "2000_2005": 6,
+        "post_2006": 24
+      },
+      "structures": {
+        "木造": 20,
+        "ＲＣ": 45,
+        "軽量鉄骨造": 1,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "大楠",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 180,
+      "avg_year_built": 1998,
+      "risk_score": 39.3,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 13,
+        "1975_1989": 18,
+        "1990_1999": 78,
+        "2000_2005": 21,
+        "post_2006": 50
+      },
+      "structures": {
+        "ＲＣ": 141,
+        "鉄骨造": 4,
+        "木造": 8,
+        "ＳＲＣ": 22,
+        "軽量鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "渡辺通",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 104,
+      "avg_year_built": 1996,
+      "risk_score": 39.2,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 5,
+        "1975_1989": 30,
+        "1990_1999": 13,
+        "2000_2005": 27,
+        "post_2006": 29
+      },
+      "structures": {
+        "ＲＣ": 43,
+        "ＳＲＣ": 58,
+        "鉄骨造": 2,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "小笹",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 116,
+      "avg_year_built": 1999,
+      "risk_score": 39.2,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 32,
+        "1990_1999": 27,
+        "2000_2005": 20,
+        "post_2006": 34
+      },
+      "structures": {
+        "木造": 23,
+        "ＲＣ": 76,
+        "鉄骨造": 1,
+        "ＳＲＣ": 10,
+        "軽量鉄骨造": 5
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "泉",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 16,
+      "avg_year_built": 1999,
+      "risk_score": 39.1,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 3,
+        "1990_1999": 2,
+        "2000_2005": 0,
+        "post_2006": 8
+      },
+      "structures": {
+        "木造": 14,
+        "軽量鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "輝国",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 43,
+      "avg_year_built": 2000,
+      "risk_score": 39.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 15,
+        "1990_1999": 7,
+        "2000_2005": 0,
+        "post_2006": 19
+      },
+      "structures": {
+        "木造": 4,
+        "ＲＣ": 37,
+        "ＳＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "新和町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 13,
+      "avg_year_built": 1999,
+      "risk_score": 38.5,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 3,
+        "1990_1999": 2,
+        "2000_2005": 7,
+        "post_2006": 1
+      },
+      "structures": {
+        "木造": 1,
+        "ＲＣ": 9,
+        "ＳＲＣ": 2,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "赤坂",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 216,
+      "avg_year_built": 1998,
+      "risk_score": 38.3,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 17,
+        "1975_1989": 33,
+        "1990_1999": 42,
+        "2000_2005": 80,
+        "post_2006": 44
+      },
+      "structures": {
+        "ＲＣ": 96,
+        "ＳＲＣ": 105,
+        "鉄骨造": 8,
+        "木造": 6,
+        "ＳＲＣ、ＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "皿山",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 47,
+      "avg_year_built": 2001,
+      "risk_score": 38.3,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 8,
+        "1990_1999": 22,
+        "2000_2005": 0,
+        "post_2006": 16
+      },
+      "structures": {
+        "ＳＲＣ": 1,
+        "ＲＣ": 20,
+        "木造": 22,
+        "軽量鉄骨造": 2,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "吉塚",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 203,
+      "avg_year_built": 1999,
+      "risk_score": 38.2,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 8,
+        "1975_1989": 44,
+        "1990_1999": 65,
+        "2000_2005": 16,
+        "post_2006": 70
+      },
+      "structures": {
+        "ＲＣ": 115,
+        "木造": 33,
+        "ＳＲＣ": 47,
+        "軽量鉄骨造": 4,
+        "鉄骨造": 4
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "若宮",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 94,
+      "avg_year_built": 2002,
+      "risk_score": 38.0,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 24,
+        "1990_1999": 29,
+        "2000_2005": 1,
+        "post_2006": 37
+      },
+      "structures": {
+        "ＳＲＣ": 10,
+        "木造": 51,
+        "ＲＣ": 29,
+        "鉄骨造": 1,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "御供所町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 33,
+      "avg_year_built": 1998,
+      "risk_score": 37.9,
+      "risk_level": "elevated",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 8,
+        "1990_1999": 11,
+        "2000_2005": 4,
+        "post_2006": 10
+      },
+      "structures": {
+        "ＳＲＣ": 21,
+        "ＲＣ": 12
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "若久",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 70,
+      "avg_year_built": 2000,
+      "risk_score": 37.9,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 9,
+        "1975_1989": 12,
+        "1990_1999": 14,
+        "2000_2005": 6,
+        "post_2006": 29
+      },
+      "structures": {
+        "木造": 52,
+        "ＲＣ": 15,
+        "木造、ブロック造": 1,
+        "ＳＲＣ": 2
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "別府",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 199,
+      "avg_year_built": 1999,
+      "risk_score": 37.7,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 17,
+        "1975_1989": 37,
+        "1990_1999": 46,
+        "2000_2005": 29,
+        "post_2006": 70
+      },
+      "structures": {
+        "ＳＲＣ": 47,
+        "ＲＣ": 125,
+        "木造": 22,
+        "鉄骨造": 2,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "多々良",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 40,
+      "avg_year_built": 2001,
+      "risk_score": 37.5,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 7,
+        "1990_1999": 10,
+        "2000_2005": 7,
+        "post_2006": 13
+      },
+      "structures": {
+        "ＲＣ": 17,
+        "木造": 19,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "大字千里",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 16,
+      "avg_year_built": 2001,
+      "risk_score": 37.5,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 2,
+        "1990_1999": 9,
+        "2000_2005": 0,
+        "post_2006": 5
+      },
+      "structures": {
+        "ＲＣ": 8,
+        "木造": 5,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "別府団地",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 4,
+      "avg_year_built": 2000,
+      "risk_score": 37.5,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 3,
+        "2000_2005": 0,
+        "post_2006": 1
+      },
+      "structures": {
+        "ＳＲＣ": 1,
+        "ＲＣ": 3
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "名島",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 108,
+      "avg_year_built": 2000,
+      "risk_score": 37.3,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 12,
+        "1975_1989": 27,
+        "1990_1999": 11,
+        "2000_2005": 10,
+        "post_2006": 48
+      },
+      "structures": {
+        "木造": 49,
+        "ＲＣ": 44,
+        "ＳＲＣ": 9,
+        "鉄骨造": 1,
+        "軽量鉄骨造": 4
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "長丘",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 105,
+      "avg_year_built": 1999,
+      "risk_score": 37.1,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 21,
+        "1990_1999": 26,
+        "2000_2005": 25,
+        "post_2006": 29
+      },
+      "structures": {
+        "木造": 13,
+        "ＲＣ": 78,
+        "ＳＲＣ": 8,
+        "軽量鉄骨造": 4,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "三宅",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 66,
+      "avg_year_built": 2001,
+      "risk_score": 37.1,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 21,
+        "1990_1999": 10,
+        "2000_2005": 15,
+        "post_2006": 20
+      },
+      "structures": {
+        "ＲＣ": 31,
+        "ＳＲＣ": 18,
+        "木造": 16
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "上山門",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 58,
+      "avg_year_built": 2002,
+      "risk_score": 37.1,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 22,
+        "1990_1999": 8,
+        "2000_2005": 0,
+        "post_2006": 27
+      },
+      "structures": {
+        "木造": 28,
+        "ＲＣ": 26,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "警弥郷",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 28,
+      "avg_year_built": 2003,
+      "risk_score": 36.6,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 7,
+        "1990_1999": 4,
+        "2000_2005": 0,
+        "post_2006": 14
+      },
+      "structures": {
+        "木造": 19,
+        "ＲＣ": 6,
+        "軽量鉄骨造": 2,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "長住",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 84,
+      "avg_year_built": 2001,
+      "risk_score": 36.6,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 13,
+        "1975_1989": 19,
+        "1990_1999": 7,
+        "2000_2005": 0,
+        "post_2006": 45
+      },
+      "structures": {
+        "木造": 39,
+        "ＲＣ": 37,
+        "ＲＣ、木造": 1,
+        "軽量鉄骨造": 3,
+        "ＳＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "和白東",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 61,
+      "avg_year_built": 2002,
+      "risk_score": 36.5,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 13,
+        "1990_1999": 17,
+        "2000_2005": 8,
+        "post_2006": 21
+      },
+      "structures": {
+        "ＳＲＣ": 11,
+        "木造": 27,
+        "ＲＣ": 18,
+        "軽量鉄骨造": 3,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "平和",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 26,
+      "avg_year_built": 2001,
+      "risk_score": 36.5,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 2,
+        "1990_1999": 12,
+        "2000_2005": 4,
+        "post_2006": 7
+      },
+      "structures": {
+        "ＲＣ": 15,
+        "木造": 9,
+        "軽量鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "西春町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 11,
+      "avg_year_built": 2003,
+      "risk_score": 36.4,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 2,
+        "1990_1999": 5,
+        "2000_2005": 0,
+        "post_2006": 4
+      },
+      "structures": {
+        "ＲＣ": 7,
+        "木造": 4
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "三苫",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 42,
+      "avg_year_built": 2003,
+      "risk_score": 36.3,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 11,
+        "1990_1999": 13,
+        "2000_2005": 2,
+        "post_2006": 16
+      },
+      "structures": {
+        "ＲＣ": 17,
+        "木造": 23,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "内野",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 49,
+      "avg_year_built": 2002,
+      "risk_score": 36.2,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 15,
+        "1990_1999": 9,
+        "2000_2005": 0,
+        "post_2006": 23
+      },
+      "structures": {
+        "木造": 47,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "平尾",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 306,
+      "avg_year_built": 1999,
+      "risk_score": 36.1,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 9,
+        "1975_1989": 71,
+        "1990_1999": 74,
+        "2000_2005": 45,
+        "post_2006": 107
+      },
+      "structures": {
+        "ＳＲＣ": 83,
+        "ＲＣ": 215,
+        "鉄骨造": 1,
+        "木造": 6,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "井尻",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 127,
+      "avg_year_built": 2001,
+      "risk_score": 35.8,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 34,
+        "1990_1999": 29,
+        "2000_2005": 14,
+        "post_2006": 48
+      },
+      "structures": {
+        "木造": 42,
+        "ＲＣ": 73,
+        "軽量鉄骨造": 2,
+        "鉄骨造": 3,
+        "ＳＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "曰佐",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 31,
+      "avg_year_built": 2002,
+      "risk_score": 35.5,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 4,
+        "1990_1999": 11,
+        "2000_2005": 2,
+        "post_2006": 12
+      },
+      "structures": {
+        "木造": 20,
+        "ＲＣ": 11
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "野間",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 115,
+      "avg_year_built": 2001,
+      "risk_score": 35.4,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 7,
+        "1975_1989": 16,
+        "1990_1999": 40,
+        "2000_2005": 7,
+        "post_2006": 45
+      },
+      "structures": {
+        "ＲＣ": 66,
+        "ＳＲＣ": 34,
+        "木造": 10,
+        "軽量鉄骨造": 3
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "原田",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 133,
+      "avg_year_built": 1999,
+      "risk_score": 35.2,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 37,
+        "1990_1999": 34,
+        "2000_2005": 4,
+        "post_2006": 57
+      },
+      "structures": {
+        "木造": 17,
+        "鉄骨造": 1,
+        "ＲＣ": 93,
+        "ＳＲＣ": 19
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "干隈",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 22,
+      "avg_year_built": 2002,
+      "risk_score": 35.2,
+      "risk_level": "elevated",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 3,
+        "1990_1999": 5,
+        "2000_2005": 0,
+        "post_2006": 11
+      },
+      "structures": {
+        "木造": 15,
+        "軽量鉄骨造": 2,
+        "ＲＣ": 5
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "野多目",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 84,
+      "avg_year_built": 2001,
+      "risk_score": 35.1,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 14,
+        "1990_1999": 29,
+        "2000_2005": 6,
+        "post_2006": 32
+      },
+      "structures": {
+        "木造": 32,
+        "ＳＲＣ": 11,
+        "ＲＣ": 37,
+        "鉄骨造": 2,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "土井",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 30,
+      "avg_year_built": 2002,
+      "risk_score": 35.0,
+      "risk_level": "elevated",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 3,
+        "1990_1999": 15,
+        "2000_2005": 3,
+        "post_2006": 9
+      },
+      "structures": {
+        "木造": 12,
+        "ＲＣ": 17
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "鳥飼",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 133,
+      "avg_year_built": 1999,
+      "risk_score": 35.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 10,
+        "1975_1989": 8,
+        "1990_1999": 55,
+        "2000_2005": 12,
+        "post_2006": 48
+      },
+      "structures": {
+        "ＲＣ": 95,
+        "鉄骨造": 3,
+        "ＳＲＣ": 26,
+        "木造": 9
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "美和台",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 56,
+      "avg_year_built": 2003,
+      "risk_score": 34.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 11,
+        "1990_1999": 14,
+        "2000_2005": 1,
+        "post_2006": 26
+      },
+      "structures": {
+        "木造": 40,
+        "軽量鉄骨造": 10,
+        "鉄骨造": 1,
+        "ＲＣ": 4
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "西長住",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 21,
+      "avg_year_built": 2003,
+      "risk_score": 34.5,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 2,
+        "1990_1999": 5,
+        "2000_2005": 1,
+        "post_2006": 10
+      },
+      "structures": {
+        "木造": 17,
+        "ＲＣ": 4
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "塩原",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 100,
+      "avg_year_built": 2000,
+      "risk_score": 34.5,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 22,
+        "1990_1999": 32,
+        "2000_2005": 8,
+        "post_2006": 38
+      },
+      "structures": {
+        "ＲＣ": 73,
+        "鉄骨造": 2,
+        "ＳＲＣ": 13,
+        "木造": 8,
+        "鉄骨造、木造": 1,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "高木",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 37,
+      "avg_year_built": 2000,
+      "risk_score": 34.5,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 14,
+        "1990_1999": 3,
+        "2000_2005": 3,
+        "post_2006": 17
+      },
+      "structures": {
+        "ＲＣ": 29,
+        "木造": 7
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "柳河内",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 29,
+      "avg_year_built": 2002,
+      "risk_score": 34.5,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 8,
+        "1990_1999": 3,
+        "2000_2005": 2,
+        "post_2006": 14
+      },
+      "structures": {
+        "木造": 13,
+        "ＲＣ": 15
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "博多駅前",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 332,
+      "avg_year_built": 1999,
+      "risk_score": 34.4,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 13,
+        "1975_1989": 69,
+        "1990_1999": 59,
+        "2000_2005": 80,
+        "post_2006": 111
+      },
+      "structures": {
+        "ＲＣ": 172,
+        "ＳＲＣ": 154,
+        "軽量鉄骨造": 1,
+        "鉄骨造": 2,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "浦田",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 16,
+      "avg_year_built": 2003,
+      "risk_score": 34.4,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 4,
+        "1990_1999": 2,
+        "2000_2005": 6,
+        "post_2006": 4
+      },
+      "structures": {
+        "木造": 16
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "玉川町",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 16,
+      "avg_year_built": 1997,
+      "risk_score": 34.4,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 3,
+        "1990_1999": 5,
+        "2000_2005": 3,
+        "post_2006": 5
+      },
+      "structures": {
+        "ＲＣ": 13,
+        "木造": 2,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "愛宕浜",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 134,
+      "avg_year_built": 1999,
+      "risk_score": 34.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 2,
+        "1990_1999": 84,
+        "2000_2005": 10,
+        "post_2006": 38
+      },
+      "structures": {
+        "ＲＣ": 86,
+        "木造": 18,
+        "ＳＲＣ": 28,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "原",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 142,
+      "avg_year_built": 2002,
+      "risk_score": 34.2,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 7,
+        "1975_1989": 33,
+        "1990_1999": 22,
+        "2000_2005": 23,
+        "post_2006": 57
+      },
+      "structures": {
+        "鉄骨造": 5,
+        "ＲＣ": 79,
+        "木造": 52,
+        "ＳＲＣ": 1,
+        "軽量鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "西公園",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 22,
+      "avg_year_built": 2000,
+      "risk_score": 34.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 5,
+        "1990_1999": 6,
+        "2000_2005": 3,
+        "post_2006": 8
+      },
+      "structures": {
+        "ＲＣ": 16,
+        "ＳＲＣ": 5,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "美野島",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 239,
+      "avg_year_built": 1999,
+      "risk_score": 34.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 15,
+        "1975_1989": 19,
+        "1990_1999": 88,
+        "2000_2005": 32,
+        "post_2006": 85
+      },
+      "structures": {
+        "ＳＲＣ": 98,
+        "ＲＣ": 126,
+        "木造": 11,
+        "軽量鉄骨造": 2,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "東月隈",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 28,
+      "avg_year_built": 2002,
+      "risk_score": 33.9,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 8,
+        "1990_1999": 6,
+        "2000_2005": 2,
+        "post_2006": 12
+      },
+      "structures": {
+        "木造": 20,
+        "軽量鉄骨造": 3,
+        "ＲＣ": 5
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "桜坂",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 90,
+      "avg_year_built": 2001,
+      "risk_score": 33.9,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 24,
+        "1990_1999": 18,
+        "2000_2005": 14,
+        "post_2006": 34
+      },
+      "structures": {
+        "ＲＣ": 65,
+        "木造": 7,
+        "ＳＲＣ": 17,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "板付",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 60,
+      "avg_year_built": 2002,
+      "risk_score": 33.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 10,
+        "1990_1999": 20,
+        "2000_2005": 3,
+        "post_2006": 25
+      },
+      "structures": {
+        "ＲＣ": 45,
+        "木造": 11,
+        "鉄骨造": 2,
+        "ＳＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "今津",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 17,
+      "avg_year_built": 2004,
+      "risk_score": 33.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 1,
+        "1990_1999": 2,
+        "2000_2005": 0,
+        "post_2006": 10
+      },
+      "structures": {
+        "木造": 14,
+        "ＲＣ": 2,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "松島",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 46,
+      "avg_year_built": 2001,
+      "risk_score": 33.7,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 14,
+        "1990_1999": 6,
+        "2000_2005": 8,
+        "post_2006": 18
+      },
+      "structures": {
+        "ＳＲＣ": 3,
+        "ＲＣ": 35,
+        "鉄骨造": 2,
+        "木造": 6
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "和白",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 111,
+      "avg_year_built": 2001,
+      "risk_score": 33.6,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 21,
+        "1990_1999": 31,
+        "2000_2005": 20,
+        "post_2006": 38
+      },
+      "structures": {
+        "ＲＣ": 59,
+        "木造": 43,
+        "ＳＲＣ": 4,
+        "鉄骨造": 5
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "百道浜",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 120,
+      "avg_year_built": 1999,
+      "risk_score": 33.5,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 2,
+        "1990_1999": 71,
+        "2000_2005": 13,
+        "post_2006": 34
+      },
+      "structures": {
+        "ＲＣ": 82,
+        "ＳＲＣ": 35,
+        "木造": 1,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "美和台新町",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 6,
+      "avg_year_built": 1999,
+      "risk_score": 33.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "軽量鉄骨造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 2,
+        "2000_2005": 4,
+        "post_2006": 0
+      },
+      "structures": {
+        "軽量鉄骨造": 3,
+        "木造": 3
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "麦野",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 51,
+      "avg_year_built": 2004,
+      "risk_score": 33.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 13,
+        "1990_1999": 10,
+        "2000_2005": 5,
+        "post_2006": 22
+      },
+      "structures": {
+        "ＲＣ": 23,
+        "木造": 19,
+        "鉄骨造": 6,
+        "軽量鉄骨造": 3
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "大字元岡",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 3,
+      "avg_year_built": 2001,
+      "risk_score": 33.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "軽量鉄骨造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 1,
+        "2000_2005": 2,
+        "post_2006": 0
+      },
+      "structures": {
+        "軽量鉄骨造": 3
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "内浜",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 33,
+      "avg_year_built": 2001,
+      "risk_score": 33.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 0,
+        "1990_1999": 17,
+        "2000_2005": 6,
+        "post_2006": 9
+      },
+      "structures": {
+        "ＲＣ": 16,
+        "木造": 12,
+        "ＳＲＣ": 4
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "豊浜",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 15,
+      "avg_year_built": 2002,
+      "risk_score": 33.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 2,
+        "1990_1999": 1,
+        "2000_2005": 0,
+        "post_2006": 9
+      },
+      "structures": {
+        "木造": 13,
+        "軽量鉄骨造": 1,
+        "ＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "港",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 93,
+      "avg_year_built": 1999,
+      "risk_score": 33.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 11,
+        "1975_1989": 13,
+        "1990_1999": 12,
+        "2000_2005": 16,
+        "post_2006": 41
+      },
+      "structures": {
+        "ＳＲＣ": 28,
+        "ＲＣ": 57,
+        "木造": 8
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "姪の浜",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 195,
+      "avg_year_built": 2001,
+      "risk_score": 33.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 21,
+        "1990_1999": 78,
+        "2000_2005": 27,
+        "post_2006": 66
+      },
+      "structures": {
+        "ＳＲＣ": 64,
+        "ＲＣ": 97,
+        "木造": 31,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "那珂",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 60,
+      "avg_year_built": 2002,
+      "risk_score": 32.9,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 7,
+        "1990_1999": 20,
+        "2000_2005": 14,
+        "post_2006": 18
+      },
+      "structures": {
+        "鉄骨造": 2,
+        "ＲＣ": 51,
+        "木造": 5,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "春吉",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 145,
+      "avg_year_built": 2001,
+      "risk_score": 32.9,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 9,
+        "1990_1999": 64,
+        "2000_2005": 28,
+        "post_2006": 42
+      },
+      "structures": {
+        "ＲＣ": 65,
+        "ＳＲＣ": 72,
+        "鉄骨造": 3,
+        "木造": 4
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "石丸",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 106,
+      "avg_year_built": 2003,
+      "risk_score": 32.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 7,
+        "1990_1999": 52,
+        "2000_2005": 12,
+        "post_2006": 35
+      },
+      "structures": {
+        "木造": 34,
+        "ＲＣ": 59,
+        "鉄骨造": 2,
+        "ＳＲＣ": 8
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "拾六町",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 41,
+      "avg_year_built": 2006,
+      "risk_score": 32.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 10,
+        "1990_1999": 7,
+        "2000_2005": 1,
+        "post_2006": 21
+      },
+      "structures": {
+        "木造": 29,
+        "軽量鉄骨造": 1,
+        "ＲＣ": 9,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "片江",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 41,
+      "avg_year_built": 2003,
+      "risk_score": 32.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 4,
+        "1990_1999": 20,
+        "2000_2005": 1,
+        "post_2006": 16
+      },
+      "structures": {
+        "鉄骨造": 1,
+        "ＲＣ": 20,
+        "木造": 20
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "名子",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 7,
+      "avg_year_built": 2003,
+      "risk_score": 32.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 4,
+        "2000_2005": 1,
+        "post_2006": 2
+      },
+      "structures": {
+        "木造": 3,
+        "ＲＣ": 4
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "堅粕",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 21,
+      "avg_year_built": 2001,
+      "risk_score": 32.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 0,
+        "1990_1999": 11,
+        "2000_2005": 1,
+        "post_2006": 8
+      },
+      "structures": {
+        "木造": 9,
+        "ＲＣ": 8,
+        "ＳＲＣ": 4
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "屋形原",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 43,
+      "avg_year_built": 2004,
+      "risk_score": 32.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 5,
+        "1990_1999": 11,
+        "2000_2005": 2,
+        "post_2006": 21
+      },
+      "structures": {
+        "木造": 32,
+        "ＲＣ": 10,
+        "ＲＣ、木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "対馬小路",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 33,
+      "avg_year_built": 2002,
+      "risk_score": 31.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 2,
+        "1990_1999": 14,
+        "2000_2005": 8,
+        "post_2006": 9
+      },
+      "structures": {
+        "木造": 1,
+        "ＲＣ": 10,
+        "鉄骨造": 2,
+        "ＳＲＣ": 20
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "天神",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 107,
+      "avg_year_built": 1999,
+      "risk_score": 31.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 39,
+        "1990_1999": 6,
+        "2000_2005": 7,
+        "post_2006": 55
+      },
+      "structures": {
+        "ＲＣ": 55,
+        "ＳＲＣ": 46,
+        "鉄骨造": 5
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "清川",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 147,
+      "avg_year_built": 2002,
+      "risk_score": 31.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 17,
+        "1990_1999": 55,
+        "2000_2005": 26,
+        "post_2006": 49
+      },
+      "structures": {
+        "ＲＣ": 76,
+        "ＳＲＣ": 62,
+        "鉄骨造": 4,
+        "木造": 3,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "柳瀬",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 11,
+      "avg_year_built": 2003,
+      "risk_score": 31.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 1,
+        "1990_1999": 5,
+        "2000_2005": 1,
+        "post_2006": 4
+      },
+      "structures": {
+        "木造": 7,
+        "ＲＣ": 2,
+        "軽量鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "昭代",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 54,
+      "avg_year_built": 2003,
+      "risk_score": 31.5,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 13,
+        "1990_1999": 11,
+        "2000_2005": 7,
+        "post_2006": 23
+      },
+      "structures": {
+        "ＲＣ": 42,
+        "木造": 2,
+        "鉄骨造": 5,
+        "軽量鉄骨造": 4
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "東比恵",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 28,
+      "avg_year_built": 2003,
+      "risk_score": 31.2,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 7,
+        "1975_1989": 2,
+        "1990_1999": 0,
+        "2000_2005": 1,
+        "post_2006": 18
+      },
+      "structures": {
+        "ＲＣ": 20,
+        "ＳＲＣ": 3,
+        "鉄骨造": 3,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "銀天町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 24,
+      "avg_year_built": 1998,
+      "risk_score": 31.2,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 2,
+        "1990_1999": 7,
+        "2000_2005": 2,
+        "post_2006": 11
+      },
+      "structures": {
+        "ＳＲＣ": 7,
+        "ＲＣ": 12,
+        "木造": 1,
+        "軽量鉄骨造": 1,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "高砂",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 137,
+      "avg_year_built": 2002,
+      "risk_score": 31.2,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 29,
+        "1990_1999": 26,
+        "2000_2005": 32,
+        "post_2006": 50
+      },
+      "structures": {
+        "ＳＲＣ": 43,
+        "鉄骨造": 2,
+        "ＲＣ": 90,
+        "木造": 2
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "七隈",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 90,
+      "avg_year_built": 2004,
+      "risk_score": 31.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 6,
+        "1975_1989": 14,
+        "1990_1999": 18,
+        "2000_2005": 10,
+        "post_2006": 42
+      },
+      "structures": {
+        "ＲＣ": 33,
+        "木造": 53,
+        "ブロック造": 1,
+        "軽量鉄骨造": 1,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "八田",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 42,
+      "avg_year_built": 2005,
+      "risk_score": 31.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 8,
+        "1990_1999": 9,
+        "2000_2005": 10,
+        "post_2006": 15
+      },
+      "structures": {
+        "ＲＣ": 22,
+        "木造": 16,
+        "軽量鉄骨造": 4
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "五十川",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 17,
+      "avg_year_built": 2006,
+      "risk_score": 30.9,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 1,
+        "1990_1999": 7,
+        "2000_2005": 0,
+        "post_2006": 8
+      },
+      "structures": {
+        "木造": 9,
+        "ＲＣ": 7,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "六本松",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 188,
+      "avg_year_built": 2001,
+      "risk_score": 30.7,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 31,
+        "1990_1999": 42,
+        "2000_2005": 46,
+        "post_2006": 67
+      },
+      "structures": {
+        "ＲＣ": 134,
+        "ＳＲＣ": 51,
+        "木造": 3
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "中尾",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 32,
+      "avg_year_built": 2005,
+      "risk_score": 30.5,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 5,
+        "1975_1989": 3,
+        "1990_1999": 5,
+        "2000_2005": 0,
+        "post_2006": 19
+      },
+      "structures": {
+        "軽量鉄骨造": 3,
+        "木造": 27,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "大岳",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 23,
+      "avg_year_built": 2006,
+      "risk_score": 30.4,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 0,
+        "1990_1999": 12,
+        "2000_2005": 0,
+        "post_2006": 10
+      },
+      "structures": {
+        "ＲＣ": 12,
+        "木造": 11
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "西片江",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 14,
+      "avg_year_built": 2004,
+      "risk_score": 30.4,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 3,
+        "1990_1999": 3,
+        "2000_2005": 2,
+        "post_2006": 6
+      },
+      "structures": {
+        "木造": 14
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "馬出",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 123,
+      "avg_year_built": 2001,
+      "risk_score": 30.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 13,
+        "1990_1999": 36,
+        "2000_2005": 26,
+        "post_2006": 45
+      },
+      "structures": {
+        "ＳＲＣ": 51,
+        "ＲＣ": 53,
+        "木造": 15,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "城西",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 75,
+      "avg_year_built": 2003,
+      "risk_score": 30.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 6,
+        "1975_1989": 9,
+        "1990_1999": 17,
+        "2000_2005": 6,
+        "post_2006": 37
+      },
+      "structures": {
+        "ＲＣ": 47,
+        "木造": 7,
+        "ＳＲＣ": 17,
+        "軽量鉄骨造": 1,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "次郎丸",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 64,
+      "avg_year_built": 2004,
+      "risk_score": 30.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 8,
+        "1990_1999": 22,
+        "2000_2005": 1,
+        "post_2006": 31
+      },
+      "structures": {
+        "鉄骨造": 1,
+        "ＲＣ": 29,
+        "木造": 30,
+        "ＳＲＣ": 1,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "平尾浄水町",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 10,
+      "avg_year_built": 2002,
+      "risk_score": 30.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 1,
+        "1990_1999": 4,
+        "2000_2005": 1,
+        "post_2006": 4
+      },
+      "structures": {
+        "ＲＣ": 8,
+        "木造": 1,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "香椎駅東",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 67,
+      "avg_year_built": 2005,
+      "risk_score": 29.9,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 5,
+        "1975_1989": 11,
+        "1990_1999": 12,
+        "2000_2005": 3,
+        "post_2006": 36
+      },
+      "structures": {
+        "木造": 52,
+        "ＲＣ": 10,
+        "鉄骨造": 1,
+        "ブロック造": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "草香江",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 137,
+      "avg_year_built": 2002,
+      "risk_score": 29.9,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 5,
+        "1975_1989": 32,
+        "1990_1999": 8,
+        "2000_2005": 32,
+        "post_2006": 60
+      },
+      "structures": {
+        "ＲＣ": 98,
+        "ＳＲＣ": 33,
+        "軽量鉄骨造": 1,
+        "木造": 3,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "下山門",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 63,
+      "avg_year_built": 2002,
+      "risk_score": 29.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 6,
+        "1990_1999": 19,
+        "2000_2005": 11,
+        "post_2006": 25
+      },
+      "structures": {
+        "ＲＣ": 49,
+        "木造": 13,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "愛宕南",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 42,
+      "avg_year_built": 2002,
+      "risk_score": 29.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 3,
+        "1990_1999": 17,
+        "2000_2005": 7,
+        "post_2006": 15
+      },
+      "structures": {
+        "ＲＣ": 33,
+        "木造": 5,
+        "ＳＲＣ": 2,
+        "軽量鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "青葉",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 60,
+      "avg_year_built": 2005,
+      "risk_score": 29.6,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 6,
+        "1990_1999": 18,
+        "2000_2005": 5,
+        "post_2006": 28
+      },
+      "structures": {
+        "木造": 48,
+        "軽量鉄骨造": 4,
+        "ＲＣ": 6,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "松崎",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 50,
+      "avg_year_built": 2003,
+      "risk_score": 29.5,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 5,
+        "1990_1999": 19,
+        "2000_2005": 6,
+        "post_2006": 20
+      },
+      "structures": {
+        "木造": 12,
+        "ＲＣ": 27,
+        "ＳＲＣ": 8,
+        "軽量鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "友泉亭",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 11,
+      "avg_year_built": 2004,
+      "risk_score": 29.5,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 2,
+        "1990_1999": 3,
+        "2000_2005": 1,
+        "post_2006": 5
+      },
+      "structures": {
+        "木造": 5,
+        "ＲＣ": 4,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "樋井川",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 77,
+      "avg_year_built": 2005,
+      "risk_score": 29.5,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 19,
+        "1990_1999": 13,
+        "2000_2005": 0,
+        "post_2006": 43
+      },
+      "structures": {
+        "木造": 60,
+        "ＲＣ": 13,
+        "軽量鉄骨造": 3,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "小田部",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 80,
+      "avg_year_built": 2005,
+      "risk_score": 29.4,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 17,
+        "1990_1999": 15,
+        "2000_2005": 9,
+        "post_2006": 38
+      },
+      "structures": {
+        "ＲＣ": 46,
+        "木造": 29
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "唐原",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 47,
+      "avg_year_built": 2004,
+      "risk_score": 29.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 2,
+        "1990_1999": 20,
+        "2000_2005": 5,
+        "post_2006": 19
+      },
+      "structures": {
+        "木造": 27,
+        "ＲＣ": 17,
+        "鉄骨造": 1,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "東光寺町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 12,
+      "avg_year_built": 2001,
+      "risk_score": 29.2,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 1,
+        "1990_1999": 4,
+        "2000_2005": 3,
+        "post_2006": 4
+      },
+      "structures": {
+        "ＲＣ": 8,
+        "木造": 2,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "千代",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 229,
+      "avg_year_built": 2001,
+      "risk_score": 29.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 24,
+        "1975_1989": 15,
+        "1990_1999": 53,
+        "2000_2005": 20,
+        "post_2006": 117
+      },
+      "structures": {
+        "ＲＣ": 124,
+        "ＳＲＣ": 90,
+        "鉄骨造": 9,
+        "木造": 5
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "西新",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 232,
+      "avg_year_built": 2002,
+      "risk_score": 29.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 7,
+        "1975_1989": 22,
+        "1990_1999": 69,
+        "2000_2005": 38,
+        "post_2006": 96
+      },
+      "structures": {
+        "ＲＣ": 139,
+        "ＳＲＣ": 72,
+        "鉄骨造": 6,
+        "木造": 7
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "曙",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 26,
+      "avg_year_built": 2004,
+      "risk_score": 28.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 1,
+        "1990_1999": 11,
+        "2000_2005": 5,
+        "post_2006": 9
+      },
+      "structures": {
+        "ＲＣ": 20,
+        "木造": 3,
+        "ＳＲＣ": 1,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "友丘",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 41,
+      "avg_year_built": 2004,
+      "risk_score": 28.7,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 8,
+        "1990_1999": 7,
+        "2000_2005": 5,
+        "post_2006": 20
+      },
+      "structures": {
+        "木造": 33,
+        "ＲＣ": 5,
+        "鉄骨造": 2,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "吉塚本町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 7,
+      "avg_year_built": 2001,
+      "risk_score": 28.6,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 1,
+        "2000_2005": 6,
+        "post_2006": 0
+      },
+      "structures": {
+        "ＲＣ": 7
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "大手門",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 227,
+      "avg_year_built": 2003,
+      "risk_score": 28.5,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 10,
+        "1975_1989": 25,
+        "1990_1999": 45,
+        "2000_2005": 54,
+        "post_2006": 93
+      },
+      "structures": {
+        "ＲＣ": 174,
+        "ＳＲＣ": 50,
+        "鉄骨造": 2,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "花畑",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 73,
+      "avg_year_built": 2005,
+      "risk_score": 28.4,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 13,
+        "1990_1999": 22,
+        "2000_2005": 0,
+        "post_2006": 38
+      },
+      "structures": {
+        "木造": 25,
+        "ＲＣ": 45,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "博多駅南",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 288,
+      "avg_year_built": 2001,
+      "risk_score": 28.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 30,
+        "1975_1989": 29,
+        "1990_1999": 46,
+        "2000_2005": 25,
+        "post_2006": 158
+      },
+      "structures": {
+        "木造": 10,
+        "ＲＣ": 200,
+        "ＳＲＣ": 74,
+        "鉄骨造": 4
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "竹下",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 33,
+      "avg_year_built": 2003,
+      "risk_score": 28.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 6,
+        "1990_1999": 6,
+        "2000_2005": 7,
+        "post_2006": 14
+      },
+      "structures": {
+        "木造": 6,
+        "ＳＲＣ": 8,
+        "ＲＣ": 15,
+        "鉄骨造": 2,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "野芥",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 82,
+      "avg_year_built": 2005,
+      "risk_score": 28.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 9,
+        "1975_1989": 11,
+        "1990_1999": 10,
+        "2000_2005": 3,
+        "post_2006": 49
+      },
+      "structures": {
+        "木造": 76,
+        "ＲＣ": 3,
+        "軽量鉄骨造": 1,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "井相田",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 17,
+      "avg_year_built": 2003,
+      "risk_score": 27.9,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 3,
+        "1990_1999": 5,
+        "2000_2005": 0,
+        "post_2006": 9
+      },
+      "structures": {
+        "ＲＣ": 8,
+        "木造": 5,
+        "ＳＲＣ": 4
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "箱崎ふ頭",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 18,
+      "avg_year_built": 2001,
+      "risk_score": 27.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 2,
+        "1990_1999": 5,
+        "2000_2005": 4,
+        "post_2006": 7
+      },
+      "structures": {
+        "木造": 2,
+        "ＳＲＣ": 3,
+        "ＲＣ": 10,
+        "鉄骨造": 3
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "水谷",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 64,
+      "avg_year_built": 2003,
+      "risk_score": 27.7,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 11,
+        "1990_1999": 15,
+        "2000_2005": 4,
+        "post_2006": 33
+      },
+      "structures": {
+        "ＲＣ": 37,
+        "軽量鉄骨造": 12,
+        "木造": 14
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "清水",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 49,
+      "avg_year_built": 2004,
+      "risk_score": 27.6,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 4,
+        "1990_1999": 17,
+        "2000_2005": 4,
+        "post_2006": 23
+      },
+      "structures": {
+        "ＲＣ": 39,
+        "木造": 7,
+        "鉄骨造、木造": 1,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "横浜",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 40,
+      "avg_year_built": 2007,
+      "risk_score": 27.5,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 11,
+        "1990_1999": 5,
+        "2000_2005": 1,
+        "post_2006": 23
+      },
+      "structures": {
+        "木造": 33,
+        "ＲＣ": 7
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "西戸崎",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 61,
+      "avg_year_built": 2003,
+      "risk_score": 27.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 5,
+        "1990_1999": 17,
+        "2000_2005": 17,
+        "post_2006": 22
+      },
+      "structures": {
+        "ＲＣ": 36,
+        "ＳＲＣ": 8,
+        "木造": 16,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "茶山",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 44,
+      "avg_year_built": 2007,
+      "risk_score": 26.7,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 1,
+        "1990_1999": 12,
+        "2000_2005": 4,
+        "post_2006": 23
+      },
+      "structures": {
+        "木造": 31,
+        "ＲＣ": 9,
+        "軽量鉄骨造": 4
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "和田",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 32,
+      "avg_year_built": 2007,
+      "risk_score": 26.6,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 3,
+        "1990_1999": 9,
+        "2000_2005": 3,
+        "post_2006": 16
+      },
+      "structures": {
+        "ＲＣ": 8,
+        "木造": 23,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "箱崎",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 339,
+      "avg_year_built": 2003,
+      "risk_score": 26.5,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 60,
+        "1990_1999": 72,
+        "2000_2005": 24,
+        "post_2006": 180
+      },
+      "structures": {
+        "ＲＣ": 246,
+        "軽量鉄骨造": 3,
+        "ＳＲＣ": 55,
+        "鉄骨造": 3,
+        "木造": 22
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "相生町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 33,
+      "avg_year_built": 2003,
+      "risk_score": 26.5,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 8,
+        "1990_1999": 5,
+        "2000_2005": 1,
+        "post_2006": 19
+      },
+      "structures": {
+        "木造": 5,
+        "ＲＣ": 28
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "比恵町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 108,
+      "avg_year_built": 2004,
+      "risk_score": 26.2,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 17,
+        "1990_1999": 27,
+        "2000_2005": 8,
+        "post_2006": 56
+      },
+      "structures": {
+        "ＳＲＣ": 41,
+        "ＲＣ": 66
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "諸岡",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 93,
+      "avg_year_built": 2005,
+      "risk_score": 26.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 17,
+        "1990_1999": 15,
+        "2000_2005": 8,
+        "post_2006": 51
+      },
+      "structures": {
+        "ＲＣ": 52,
+        "木造": 35,
+        "鉄骨造": 1,
+        "ＳＲＣ": 3,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "小戸",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 79,
+      "avg_year_built": 2007,
+      "risk_score": 25.6,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 10,
+        "1990_1999": 24,
+        "2000_2005": 3,
+        "post_2006": 42
+      },
+      "structures": {
+        "木造": 45,
+        "ＲＣ": 28,
+        "軽量鉄骨造": 1,
+        "ＳＲＣ": 3
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "香椎浜",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 178,
+      "avg_year_built": 2006,
+      "risk_score": 25.4,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 41,
+        "1990_1999": 22,
+        "2000_2005": 10,
+        "post_2006": 104
+      },
+      "structures": {
+        "ＲＣ": 148,
+        "ＳＲＣ": 22
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "住吉",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 209,
+      "avg_year_built": 2002,
+      "risk_score": 25.4,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 39,
+        "1990_1999": 13,
+        "2000_2005": 53,
+        "post_2006": 100
+      },
+      "structures": {
+        "木造": 7,
+        "ＲＣ": 126,
+        "ＳＲＣ": 65,
+        "鉄骨造": 8,
+        "軽量鉄骨造": 3
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "舞松原",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 48,
+      "avg_year_built": 2008,
+      "risk_score": 25.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 3,
+        "1990_1999": 19,
+        "2000_2005": 1,
+        "post_2006": 25
+      },
+      "structures": {
+        "木造": 27,
+        "ＲＣ": 15,
+        "軽量鉄骨造": 6
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "豊",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 11,
+      "avg_year_built": 2004,
+      "risk_score": 25.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 1,
+        "1990_1999": 4,
+        "2000_2005": 0,
+        "post_2006": 6
+      },
+      "structures": {
+        "ＲＣ": 10,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "南本町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 6,
+      "avg_year_built": 2003,
+      "risk_score": 25.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 2,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 4
+      },
+      "structures": {
+        "ＲＣ": 6
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "田尻",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 18,
+      "avg_year_built": 2007,
+      "risk_score": 25.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 8,
+        "2000_2005": 2,
+        "post_2006": 8
+      },
+      "structures": {
+        "ＲＣ": 7,
+        "木造": 3,
+        "鉄骨造": 2,
+        "軽量鉄骨造": 6
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "干隈",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 24,
+      "avg_year_built": 2005,
+      "risk_score": 25.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 5,
+        "1990_1999": 1,
+        "2000_2005": 7,
+        "post_2006": 11
+      },
+      "structures": {
+        "ＲＣ": 15,
+        "木造": 7,
+        "ＳＲＣ": 1,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "百道",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 65,
+      "avg_year_built": 2004,
+      "risk_score": 24.2,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 10,
+        "1990_1999": 9,
+        "2000_2005": 7,
+        "post_2006": 37
+      },
+      "structures": {
+        "ＲＣ": 55,
+        "木造": 4,
+        "ＳＲＣ": 5,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "田隈",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 28,
+      "avg_year_built": 2007,
+      "risk_score": 24.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 4,
+        "1990_1999": 3,
+        "2000_2005": 1,
+        "post_2006": 18
+      },
+      "structures": {
+        "ＳＲＣ": 1,
+        "木造": 26,
+        "ＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "的場",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 23,
+      "avg_year_built": 2004,
+      "risk_score": 23.9,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 2,
+        "1990_1999": 6,
+        "2000_2005": 0,
+        "post_2006": 14
+      },
+      "structures": {
+        "ＳＲＣ": 1,
+        "ＲＣ": 15,
+        "木造": 7
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "大平寺",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 19,
+      "avg_year_built": 2008,
+      "risk_score": 23.7,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 4,
+        "1990_1999": 1,
+        "2000_2005": 0,
+        "post_2006": 13
+      },
+      "structures": {
+        "木造": 18,
+        "ＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "西の丘",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 38,
+      "avg_year_built": 2003,
+      "risk_score": 23.7,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 3,
+        "2000_2005": 30,
+        "post_2006": 5
+      },
+      "structures": {
+        "ＲＣ": 17,
+        "軽量鉄骨造": 8,
+        "木造": 13
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "姪浜駅南",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 87,
+      "avg_year_built": 2004,
+      "risk_score": 23.6,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 6,
+        "1990_1999": 21,
+        "2000_2005": 22,
+        "post_2006": 38
+      },
+      "structures": {
+        "木造": 11,
+        "ＲＣ": 51,
+        "鉄骨造": 4,
+        "ＳＲＣ": 16,
+        "軽量鉄骨造": 4
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "須崎町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 30,
+      "avg_year_built": 2002,
+      "risk_score": 23.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 7,
+        "1990_1999": 1,
+        "2000_2005": 1,
+        "post_2006": 20
+      },
+      "structures": {
+        "ＲＣ": 22,
+        "鉄骨造": 3,
+        "ＳＲＣ": 4,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "南片江",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 45,
+      "avg_year_built": 2007,
+      "risk_score": 23.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 8,
+        "1990_1999": 5,
+        "2000_2005": 4,
+        "post_2006": 27
+      },
+      "structures": {
+        "木造": 40,
+        "軽量鉄骨造": 4,
+        "ＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "田島",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 78,
+      "avg_year_built": 2008,
+      "risk_score": 23.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 12,
+        "1990_1999": 11,
+        "2000_2005": 10,
+        "post_2006": 44
+      },
+      "structures": {
+        "鉄骨造": 3,
+        "木造": 58,
+        "ＲＣ": 16,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "横手南町",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 12,
+      "avg_year_built": 2008,
+      "risk_score": 22.9,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 2,
+        "1990_1999": 2,
+        "2000_2005": 1,
+        "post_2006": 7
+      },
+      "structures": {
+        "木造": 7,
+        "ＲＣ": 4
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "重留",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 52,
+      "avg_year_built": 2010,
+      "risk_score": 22.6,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 8,
+        "1990_1999": 6,
+        "2000_2005": 3,
+        "post_2006": 33
+      },
+      "structures": {
+        "木造": 46,
+        "ＳＲＣ": 2,
+        "鉄骨造": 1,
+        "軽量鉄骨造": 2,
+        "ＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "藤崎",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 31,
+      "avg_year_built": 2002,
+      "risk_score": 22.6,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 3,
+        "1990_1999": 5,
+        "2000_2005": 5,
+        "post_2006": 17
+      },
+      "structures": {
+        "ＲＣ": 27,
+        "木造": 4
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "老司",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 54,
+      "avg_year_built": 2009,
+      "risk_score": 22.2,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 8,
+        "1990_1999": 11,
+        "2000_2005": 2,
+        "post_2006": 33
+      },
+      "structures": {
+        "木造": 36,
+        "ＲＣ": 11,
+        "軽量鉄骨造": 4,
+        "鉄骨造、木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "田村",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 42,
+      "avg_year_built": 2009,
+      "risk_score": 22.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 3,
+        "1975_1989": 2,
+        "1990_1999": 9,
+        "2000_2005": 1,
+        "post_2006": 27
+      },
+      "structures": {
+        "鉄骨造": 1,
+        "木造": 40,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "梅林",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 33,
+      "avg_year_built": 2010,
+      "risk_score": 22.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 6,
+        "1990_1999": 5,
+        "2000_2005": 1,
+        "post_2006": 21
+      },
+      "structures": {
+        "木造": 32,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "飯倉",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 129,
+      "avg_year_built": 2007,
+      "risk_score": 21.9,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 20,
+        "1990_1999": 21,
+        "2000_2005": 7,
+        "post_2006": 80
+      },
+      "structures": {
+        "木造": 55,
+        "ＲＣ": 60,
+        "軽量鉄骨造": 7,
+        "ＳＲＣ": 2,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "高美台",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 18,
+      "avg_year_built": 2010,
+      "risk_score": 20.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 0,
+        "1990_1999": 4,
+        "2000_2005": 3,
+        "post_2006": 10
+      },
+      "structures": {
+        "木造": 15,
+        "軽量鉄骨造": 3
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "中洲",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 18,
+      "avg_year_built": 2005,
+      "risk_score": 20.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 3,
+        "1990_1999": 1,
+        "2000_2005": 4,
+        "post_2006": 10
+      },
+      "structures": {
+        "ＲＣ": 9,
+        "鉄骨造": 1,
+        "ＳＲＣ": 7
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "下呉服町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 98,
+      "avg_year_built": 2006,
+      "risk_score": 20.4,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 3,
+        "1990_1999": 28,
+        "2000_2005": 11,
+        "post_2006": 55
+      },
+      "structures": {
+        "ＳＲＣ": 37,
+        "ＲＣ": 60,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "今宿",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 31,
+      "avg_year_built": 2006,
+      "risk_score": 20.2,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 4,
+        "1990_1999": 3,
+        "2000_2005": 3,
+        "post_2006": 20
+      },
+      "structures": {
+        "木造": 14,
+        "ＲＣ": 14,
+        "軽量鉄骨造": 2,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "野方",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 66,
+      "avg_year_built": 2010,
+      "risk_score": 20.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 6,
+        "1990_1999": 16,
+        "2000_2005": 3,
+        "post_2006": 41
+      },
+      "structures": {
+        "木造": 55,
+        "ＲＣ": 5,
+        "軽量鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "奈良屋町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 54,
+      "avg_year_built": 2003,
+      "risk_score": 19.9,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 3,
+        "1990_1999": 10,
+        "2000_2005": 10,
+        "post_2006": 30
+      },
+      "structures": {
+        "ＲＣ": 35,
+        "ＳＲＣ": 17,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "千早",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 174,
+      "avg_year_built": 2005,
+      "risk_score": 19.4,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 6,
+        "1975_1989": 24,
+        "1990_1999": 13,
+        "2000_2005": 13,
+        "post_2006": 118
+      },
+      "structures": {
+        "ＲＣ": 101,
+        "木造": 21,
+        "ＳＲＣ": 33,
+        "鉄骨造": 3
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "神屋町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 51,
+      "avg_year_built": 2004,
+      "risk_score": 19.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 4,
+        "1975_1989": 3,
+        "1990_1999": 7,
+        "2000_2005": 0,
+        "post_2006": 37
+      },
+      "structures": {
+        "ＲＣ": 38,
+        "ＳＲＣ": 10,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "築港本町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 41,
+      "avg_year_built": 2005,
+      "risk_score": 18.9,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 5,
+        "1990_1999": 5,
+        "2000_2005": 6,
+        "post_2006": 25
+      },
+      "structures": {
+        "ＲＣ": 33,
+        "ＳＲＣ": 7
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "大字田尻",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 4,
+      "avg_year_built": 2008,
+      "risk_score": 18.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 1,
+        "2000_2005": 1,
+        "post_2006": 2
+      },
+      "structures": {
+        "木造": 3
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "上牟田",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 11,
+      "avg_year_built": 2004,
+      "risk_score": 18.2,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 4,
+        "2000_2005": 0,
+        "post_2006": 7
+      },
+      "structures": {
+        "鉄骨造": 4,
+        "ＲＣ": 6,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "大宮",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 58,
+      "avg_year_built": 2007,
+      "risk_score": 18.1,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 6,
+        "1990_1999": 5,
+        "2000_2005": 6,
+        "post_2006": 39
+      },
+      "structures": {
+        "ＲＣ": 49,
+        "鉄骨造": 2,
+        "木造": 1,
+        "ＳＲＣ": 6
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "三筑",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 28,
+      "avg_year_built": 2009,
+      "risk_score": 17.9,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 4,
+        "1990_1999": 1,
+        "2000_2005": 6,
+        "post_2006": 17
+      },
+      "structures": {
+        "ＲＣ": 25,
+        "木造": 1,
+        "鉄骨造": 1,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "筥松",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 66,
+      "avg_year_built": 2006,
+      "risk_score": 16.7,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 8,
+        "1990_1999": 9,
+        "2000_2005": 2,
+        "post_2006": 47
+      },
+      "structures": {
+        "ＲＣ": 41,
+        "ＳＲＣ": 5,
+        "木造": 18,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "地行",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 108,
+      "avg_year_built": 2007,
+      "risk_score": 16.7,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 2,
+        "1990_1999": 17,
+        "2000_2005": 32,
+        "post_2006": 57
+      },
+      "structures": {
+        "ＲＣ": 81,
+        "ＳＲＣ": 18,
+        "木造": 9
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "伊崎",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 9,
+      "avg_year_built": 2011,
+      "risk_score": 16.7,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 3,
+        "2000_2005": 0,
+        "post_2006": 6
+      },
+      "structures": {
+        "木造": 4,
+        "ＲＣ": 3
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "唐人町",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 43,
+      "avg_year_built": 2007,
+      "risk_score": 16.3,
+      "risk_level": "low_moderate",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 3,
+        "1990_1999": 1,
+        "2000_2005": 13,
+        "post_2006": 25
+      },
+      "structures": {
+        "ＲＣ": 34,
+        "ＳＲＣ": 4,
+        "木造": 3,
+        "ブロック造": 1,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "南大橋",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 30,
+      "avg_year_built": 2011,
+      "risk_score": 15.8,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 4,
+        "1990_1999": 2,
+        "2000_2005": 3,
+        "post_2006": 21
+      },
+      "structures": {
+        "木造": 24,
+        "ＳＲＣ": 3,
+        "ＲＣ": 3
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "今宿東",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 35,
+      "avg_year_built": 2011,
+      "risk_score": 15.7,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 6,
+        "2000_2005": 10,
+        "post_2006": 19
+      },
+      "structures": {
+        "木造": 17,
+        "ＳＲＣ": 5,
+        "ＲＣ": 8,
+        "軽量鉄骨造": 4,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "賀茂",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 47,
+      "avg_year_built": 2014,
+      "risk_score": 15.4,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 4,
+        "1990_1999": 4,
+        "2000_2005": 1,
+        "post_2006": 36
+      },
+      "structures": {
+        "木造": 34,
+        "ＲＣ": 3,
+        "軽量鉄骨造": 7,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "橋本",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 5,
+      "avg_year_built": 2011,
+      "risk_score": 15.0,
+      "risk_level": "low_moderate",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 1,
+        "2000_2005": 1,
+        "post_2006": 3
+      },
+      "structures": {
+        "木造": 3,
+        "軽量鉄骨造": 1,
+        "ＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市早良区",
+      "municipality_code": "40137",
+      "district": "四箇",
+      "ward": "Sawara Ward (早良区)",
+      "n_buildings": 14,
+      "avg_year_built": 2012,
+      "risk_score": 14.3,
+      "risk_level": "low",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 0,
+        "1990_1999": 2,
+        "2000_2005": 0,
+        "post_2006": 11
+      },
+      "structures": {
+        "木造": 10,
+        "鉄骨造": 1,
+        "軽量鉄骨造": 2,
+        "ＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "綱場町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 11,
+      "avg_year_built": 2006,
+      "risk_score": 13.6,
+      "risk_level": "low",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 6,
+        "post_2006": 5
+      },
+      "structures": {
+        "ＳＲＣ": 6,
+        "ＲＣ": 5
+      }
+    },
+    {
+      "municipality": "福岡市城南区",
+      "municipality_code": "40136",
+      "district": "松山",
+      "ward": "Jonan Ward (城南区)",
+      "n_buildings": 28,
+      "avg_year_built": 2013,
+      "risk_score": 13.4,
+      "risk_level": "low",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 5,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 23
+      },
+      "structures": {
+        "木造": 23,
+        "ＲＣ": 3,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "月隈",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 4,
+      "avg_year_built": 2007,
+      "risk_score": 12.5,
+      "risk_level": "low",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 1,
+        "2000_2005": 0,
+        "post_2006": 3
+      },
+      "structures": {
+        "木造": 3,
+        "ＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "御所ヶ谷",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 4,
+      "avg_year_built": 2004,
+      "risk_score": 12.5,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 2,
+        "post_2006": 2
+      },
+      "structures": {
+        "軽量鉄骨造": 1,
+        "ＲＣ": 3
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "室見が丘",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 40,
+      "avg_year_built": 2009,
+      "risk_score": 11.9,
+      "risk_level": "low",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 0,
+        "1990_1999": 1,
+        "2000_2005": 13,
+        "post_2006": 25
+      },
+      "structures": {
+        "木造": 36,
+        "軽量鉄骨造": 4
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "上呉服町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 15,
+      "avg_year_built": 2009,
+      "risk_score": 11.7,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 1,
+        "1990_1999": 0,
+        "2000_2005": 4,
+        "post_2006": 10
+      },
+      "structures": {
+        "鉄骨造": 1,
+        "ＲＣ": 9,
+        "ＳＲＣ": 4,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "石城町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 35,
+      "avg_year_built": 2010,
+      "risk_score": 11.4,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 2,
+        "1990_1999": 4,
+        "2000_2005": 2,
+        "post_2006": 27
+      },
+      "structures": {
+        "ＲＣ": 26,
+        "ＳＲＣ": 8
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "中呉服町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 68,
+      "avg_year_built": 2005,
+      "risk_score": 11.4,
+      "risk_level": "low",
+      "dominant_structure": "ＳＲＣ",
+      "year_bands": {
+        "pre_1975": 2,
+        "1975_1989": 1,
+        "1990_1999": 8,
+        "2000_2005": 4,
+        "post_2006": 53
+      },
+      "structures": {
+        "ＲＣ": 29,
+        "ＳＲＣ": 35,
+        "木造": 2,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "富士見",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 11,
+      "avg_year_built": 2006,
+      "risk_score": 11.4,
+      "risk_level": "low",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 5,
+        "post_2006": 6
+      },
+      "structures": {
+        "木造": 9,
+        "鉄骨造": 1,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "店屋町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 27,
+      "avg_year_built": 2007,
+      "risk_score": 11.1,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 1,
+        "1975_1989": 1,
+        "1990_1999": 2,
+        "2000_2005": 1,
+        "post_2006": 22
+      },
+      "structures": {
+        "ＲＣ": 23,
+        "ＳＲＣ": 2,
+        "鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "北原",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 7,
+      "avg_year_built": 2013,
+      "risk_score": 10.7,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 1,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 6
+      },
+      "structures": {
+        "軽量鉄骨造": 2,
+        "ＲＣ": 3,
+        "木造": 2
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "雁の巣",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 24,
+      "avg_year_built": 2015,
+      "risk_score": 10.4,
+      "risk_level": "low",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 1,
+        "1990_1999": 3,
+        "2000_2005": 1,
+        "post_2006": 19
+      },
+      "structures": {
+        "木造": 22,
+        "軽量鉄骨造": 2
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "梅光園",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 27,
+      "avg_year_built": 2007,
+      "risk_score": 9.3,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 2,
+        "1990_1999": 1,
+        "2000_2005": 2,
+        "post_2006": 22
+      },
+      "structures": {
+        "鉄骨造": 1,
+        "軽量鉄骨造": 2,
+        "ＲＣ": 21,
+        "ＳＲＣ": 2,
+        "木造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "古門戸町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 42,
+      "avg_year_built": 2011,
+      "risk_score": 6.5,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 1,
+        "1990_1999": 4,
+        "2000_2005": 0,
+        "post_2006": 37
+      },
+      "structures": {
+        "ＳＲＣ": 11,
+        "ＲＣ": 30,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "中洲中島町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 35,
+      "avg_year_built": 2007,
+      "risk_score": 6.4,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 9,
+        "post_2006": 26
+      },
+      "structures": {
+        "ＲＣ": 30,
+        "ＳＲＣ": 5
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "折立町",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 12,
+      "avg_year_built": 2009,
+      "risk_score": 6.2,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 3,
+        "post_2006": 9
+      },
+      "structures": {
+        "ＲＣ": 9,
+        "木造": 3
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "塩浜",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 28,
+      "avg_year_built": 2014,
+      "risk_score": 3.6,
+      "risk_level": "low",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 2,
+        "2000_2005": 0,
+        "post_2006": 26
+      },
+      "structures": {
+        "軽量鉄骨造": 1,
+        "木造": 15,
+        "ＲＣ": 12
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "長浜",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 86,
+      "avg_year_built": 2013,
+      "risk_score": 3.2,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 3,
+        "1990_1999": 1,
+        "2000_2005": 0,
+        "post_2006": 82
+      },
+      "structures": {
+        "ＲＣ": 79,
+        "ＳＲＣ": 5,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "東浜",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 16,
+      "avg_year_built": 2009,
+      "risk_score": 1.6,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 1,
+        "post_2006": 15
+      },
+      "structures": {
+        "ＳＲＣ": 2,
+        "ＲＣ": 13
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "香椎照葉",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 288,
+      "avg_year_built": 2014,
+      "risk_score": 1.2,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 14,
+        "post_2006": 274
+      },
+      "structures": {
+        "ＲＣ": 210,
+        "ＳＲＣ": 39,
+        "軽量鉄骨造": 10,
+        "木造": 9,
+        "鉄骨造": 3
+      }
+    },
+    {
+      "municipality": "福岡市東区",
+      "municipality_code": "40131",
+      "district": "香椎団地",
+      "ward": "Higashi Ward (東区)",
+      "n_buildings": 4,
+      "avg_year_built": 2013,
+      "risk_score": 0.0,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 4
+      },
+      "structures": {
+        "ＲＣ": 4
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "大井",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 3,
+      "avg_year_built": 2023,
+      "risk_score": 0.0,
+      "risk_level": "low",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 3
+      },
+      "structures": {
+        "木造": 3
+      }
+    },
+    {
+      "municipality": "福岡市博多区",
+      "municipality_code": "40132",
+      "district": "下川端町",
+      "ward": "Hakata Ward (博多区)",
+      "n_buildings": 7,
+      "avg_year_built": 2010,
+      "risk_score": 0.0,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 7
+      },
+      "structures": {
+        "ＲＣ": 7
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "地行浜",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 45,
+      "avg_year_built": 2019,
+      "risk_score": 0.0,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 45
+      },
+      "structures": {
+        "ＲＣ": 44,
+        "ＳＲＣ": 1
+      }
+    },
+    {
+      "municipality": "福岡市中央区",
+      "municipality_code": "40133",
+      "district": "西中洲",
+      "ward": "Chuo Ward (中央区)",
+      "n_buildings": 10,
+      "avg_year_built": 2015,
+      "risk_score": 0.0,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 10
+      },
+      "structures": {
+        "ＲＣ": 9,
+        "鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "大橋団地",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 12,
+      "avg_year_built": 2013,
+      "risk_score": 0.0,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 12
+      },
+      "structures": {
+        "ＲＣ": 11
+      }
+    },
+    {
+      "municipality": "福岡市南区",
+      "municipality_code": "40134",
+      "district": "若久団地",
+      "ward": "Minami Ward (南区)",
+      "n_buildings": 4,
+      "avg_year_built": 2017,
+      "risk_score": 0.0,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 4
+      },
+      "structures": {
+        "木造": 1,
+        "ＲＣ": 3
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "西都",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 30,
+      "avg_year_built": 2014,
+      "risk_score": 0.0,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 30
+      },
+      "structures": {
+        "木造": 7,
+        "ＲＣ": 22,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "今宿西",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 8,
+      "avg_year_built": 2012,
+      "risk_score": 0.0,
+      "risk_level": "low",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 8
+      },
+      "structures": {
+        "木造": 4,
+        "ＲＣ": 3,
+        "軽量鉄骨造": 1
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "田尻東",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 3,
+      "avg_year_built": 2023,
+      "risk_score": 0.0,
+      "risk_level": "low",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 3
+      },
+      "structures": {
+        "木造": 3
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "徳永北",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 6,
+      "avg_year_built": 2013,
+      "risk_score": 0.0,
+      "risk_level": "low",
+      "dominant_structure": "ＲＣ",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 6
+      },
+      "structures": {
+        "ＲＣ": 6
+      }
+    },
+    {
+      "municipality": "福岡市西区",
+      "municipality_code": "40135",
+      "district": "女原北",
+      "ward": "Nishi Ward (西区)",
+      "n_buildings": 3,
+      "avg_year_built": 2017,
+      "risk_score": 0.0,
+      "risk_level": "low",
+      "dominant_structure": "木造",
+      "year_bands": {
+        "pre_1975": 0,
+        "1975_1989": 0,
+        "1990_1999": 0,
+        "2000_2005": 0,
+        "post_2006": 3
+      },
+      "structures": {
+        "木造": 3
+      }
+    }
+  ]
+}
