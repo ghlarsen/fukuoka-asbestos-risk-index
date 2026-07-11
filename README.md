@@ -4,13 +4,13 @@
 
 **A Construction-Era Asbestos Risk Index for Residential Districts in Fukuoka Prefecture Using MLIT Transaction Data**
 
-Sebastian Larsen, Torii Property Platform, Fukuoka, Japan
+Sebastian Larsen, Yudane (yudane.com), Denmark
 
 ---
 
 ## Overview
 
-This repository contains the complete data pipeline and derived dataset for a district-level asbestos risk index covering Fukuoka Prefecture, Japan. The methodology uses building construction year data from the MLIT Real Estate Information Library (不動産情報ライブラリ) to assign construction-era risk scores to 313 residential districts.
+This repository contains the complete data pipeline and derived dataset for a district-level asbestos risk index covering Fukuoka Prefecture, Japan. The methodology uses building construction year data from the MLIT Real Estate Information Library (不動産情報ライブラリ) to assign construction-era risk scores to 1,360 residential districts across all 51 municipalities of Fukuoka Prefecture.
 
 The methodology paper is included in this repository (`asbestos-methodology-paper.md`) and submitted for peer review. This dataset is offered to MLIT and Fukuoka City for integration into the 重ねるハザードマップ geospatial infrastructure.
 
@@ -21,7 +21,7 @@ The methodology paper is included in this repository (`asbestos-methodology-pape
 | File | Description |
 |------|-------------|
 | `build_asbestos_overlay.py` | Complete data pipeline (Python 3.11, ~160 lines, no external dependencies) |
-| `asbestos_risk_districts.json` | Derived dataset: 313 districts, 18,006 transactions, Fukuoka Prefecture |
+| `asbestos_risk_districts.json` | Derived dataset: 1,360 districts, 31,184 transactions, 51 municipalities, Fukuoka Prefecture |
 | `asbestos-methodology-paper.md` | Full methodology paper (draft for peer review) |
 
 ---
@@ -81,10 +81,11 @@ Each district entry in `asbestos_risk_districts.json` contains:
 
 ## Coverage
 
-- **313 districts** scored across Fukuoka Prefecture
-- **18,006 transactions** (buildings) contributing
-- Risk distribution: 10 very_high · 15 high · 123 elevated · 132 low_moderate · 33 low
-- 89% of districts score low_moderate or above
+- **1,360 districts** scored across all 51 municipalities of Fukuoka Prefecture
+- **31,184 transactions** (buildings) contributing
+- Risk distribution: 116 very_high · 192 high · 436 elevated · 455 low_moderate · 161 low
+- 88% of districts score low_moderate or above
+- The index is a district-level **screening prior** (a calibrated re-expression of construction age; near-monotone in mean building age, |ρ| = 0.97), not a building-level diagnosis or a validated risk model.
 
 ---
 
@@ -104,5 +105,5 @@ Methodology paper: © Sebastian Larsen, all rights reserved pending journal assi
 
 ## Contact
 
-sebastian@larsen.studio
+yudane@larsen.studio
 Comments and collaboration from MLIT, prefectural governments, and academic researchers are welcome.

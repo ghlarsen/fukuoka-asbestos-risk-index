@@ -1,8 +1,11 @@
 # A Construction-Era Asbestos Risk Index for Residential Districts in Fukuoka Prefecture Using MLIT Transaction Data
 
 **Sebastian Larsen**
-Torii Property Platform, Fukuoka, Japan
-*Draft for peer review and MLIT submission — March 2026*
+Yudane (yudane.com), Denmark
+ORCID: 0009-0008-9711-9556
+Corresponding author: yudane@larsen.studio
+
+Short title: Construction-era asbestos risk index for Fukuoka Prefecture
 
 ---
 
@@ -12,9 +15,11 @@ Torii Property Platform, Fukuoka, Japan
 
 **Methods:** We developed a construction-era risk index using building construction year data from the MLIT Real Estate Information Library (不動産情報ライブラリ), applied to Fukuoka Prefecture as a case study. A five-tier scoring model anchored to Japan's regulatory history assigns points by era: before 1975 (peak consumption, spray application unrestricted) = 100 points; 1975–1989 = 75; 1990–1999 = 50; 2000–2005 = 25; 2006 onwards = 0. District scores are the arithmetic mean of individual building scores; districts with fewer than three transactions were excluded. A Python pipeline processes the MLIT source CSV and outputs a structured JSON dataset.
 
-**Results:** Risk scores were generated for 1,360 districts across 51 municipalities, comprising 31,184 transactions. The distribution was: very high (≥75 points), 116 districts (8.5%); high, 192 districts (14.1%); elevated, 436 districts (32.1%); low-moderate, 455 districts (33.5%); low, 161 districts (11.8%). In total, 88% of scored districts received a risk classification of low-moderate or above; only 11.8% scored as genuinely low risk. The highest-risk districts are concentrated in older parts of Fukuoka City's central wards, Kitakyushu City's industrial zones, and post-war public housing estates, predominantly comprising SRC and RC structures where Level 1 spray asbestos exposure risk is elevated.
+**Results:** Risk scores were generated for 1,360 districts across 51 municipalities, comprising 31,184 transactions. The distribution was: very high (≥75 points), 116 districts (8.5%); high, 192 districts (14.1%); elevated, 436 districts (32.1%); low-moderate, 455 districts (33.5%); low, 161 districts (11.8%). In total, 88% of scored districts received a risk classification of low-moderate or above; only 11.8% scored as genuinely low risk. The highest-risk districts are concentrated in older parts of Fukuoka City's central wards, Kitakyushu City's industrial zones, and early post-war housing areas; most very-high districts are wood-frame (木造) dominant (85 of 116), with a concrete and steel-frame minority (RC/SRC) in which the additional Level 1 spray-asbestos concern applies.
 
-**Conclusion:** The methodology is simple, reproducible, and uses entirely public data maintained by MLIT; the full pipeline and derived dataset are released openly. National expansion to all 47 prefectures is feasible using the identical pipeline. We offer the dataset and methodology to MLIT and Fukuoka City for integration into the 重ねるハザードマップ geospatial infrastructure and the Real Estate Information Library map viewer, and recommend extending the 重要事項説明 disclosure framework to place construction-era risk information before purchasers at the point of transaction.
+**Conclusion:** The methodology is simple, reproducible, and uses entirely public data maintained by MLIT; the full pipeline and derived dataset are released openly. The index is presented as a district-level *screening prior* — a calibrated re-expression of construction age as regulatory-epoch ACM likelihood, near-monotone in mean building age (|ρ| = 0.97) — not as a building-level diagnosis or a validated risk model; no ground-truth survey-outcome validation is yet possible from public data. National expansion to all 47 prefectures is feasible using the identical pipeline. We offer the dataset and methodology to MLIT and Fukuoka City for integration into the national Hazard Map Portal (重ねるハザードマップ) geospatial infrastructure and the Real Estate Information Library map viewer, and recommend extending the property transaction disclosure framework (重要事項説明) to place construction-era risk information before purchasers at the point of transaction.
+
+**Keywords:** asbestos; akiya; vacant homes; demolition; residential buildings; spatial risk; construction era; Fukuoka; Japan; property transaction; public health; environmental health
 
 ---
 
@@ -48,7 +53,7 @@ These reforms represent a genuine tightening of the compliance landscape. Howeve
 
 A further concern motivating the construction-era risk approach is documented unreliability in laboratory testing. Detection limitations operate across three analytically distinct contexts: (i) bulk material identification; (ii) occupational air monitoring; and (iii) disease diagnostic pathology. The sensitivity hierarchy is well established: PLM has detection limits of approximately 0.1–0.25% by weight, while TEM achieves 0.001–0.005% — a roughly 100-fold improvement. Chatfield (2025) demonstrated that publications claiming absence of tremolite and actinolite in chrysotile samples relied on methods with insufficient sensitivity, requiring TEM for definitive characterisation [5]. Cossio et al. (2018) found that manual SEM-EDS covers only approximately 0.5% of a filter area under standard survey conditions [2]. Eypert-Blaison et al. (2018) found no simple relationship between PCM and ATEM counts across 265 construction-site air samples, indicating that PCM systematically underestimates amphibole exposures [4]. Barbieri et al. (2025) documented a sensitivity of only 67% for the Helsinki criteria in post-mortem lung tissue — meaning one-third of occupationally exposed individuals were misclassified as unexposed at autopsy [3].
 
-In the Japanese context, Japan's primary testing method (JIS A 1481-1:2008, XRD/DS-PCM) was submitted for inclusion in the international standard ISO 22262-1. Following a blind-sample validation exercise, the ISO working group reportedly voted 10 to 1 to exclude the JIS method after it failed to detect asbestos in approximately 47% of positive reference samples [30,31]. The published ISO 22262-1:2012 specifies PLM as the primary qualitative identification method; XRD is confined to quantification only (ISO 22262-3:2016) on the documented technical grounds that XRD cannot discriminate between asbestiform and non-asbestiform mineral habits. This means the 石綿事前調査結果報告システム may contain false negatives, and any calibration of the construction-era risk index against survey data must account for this limitation.
+In the Japanese context, Japan's primary testing method (JIS A 1481-1:2008, XRD/DS-PCM) was submitted for inclusion in the international standard ISO 22262-1. Following a blind-sample validation exercise, the ISO working group reportedly voted 10 to 1 to exclude the JIS method after it failed to detect asbestos in approximately 47% of positive reference samples [30,31]. This account derives from advocacy and investigative-journalism sources [30,31] rather than a peer-reviewed report and is presented as context; it is not essential to the construction-era method, which does not depend on the reliability of any single laboratory standard. The published ISO 22262-1:2012 specifies PLM as the primary qualitative identification method; XRD is confined to quantification only (ISO 22262-3:2016) on the documented technical grounds that XRD cannot discriminate between asbestiform and non-asbestiform mineral habits. This means the 石綿事前調査結果報告システム may contain false negatives, and any calibration of the construction-era risk index against survey data must account for this limitation.
 
 Construction-era screening provides an independent signal that does not depend on any single analytical method — filling a risk-awareness gap even where laboratory confirmation has been attempted.
 
@@ -77,7 +82,7 @@ The primary data source is the **MLIT Real Estate Information Library (不動産
 
 The full Fukuoka Prefecture dataset contains 44,030 transaction records across all 51 municipalities that returned data. Records without a parseable `BuildingYear` value (12,083 records, 27.4%) were excluded, leaving 31,947 records with valid construction year data. A further 763 records in districts with fewer than three contributing records were excluded per the district minimum threshold (Section 2.2). This left 31,184 records across 1,360 districts for analysis.
 
-An alternative source of construction year data for the residential building stock is the Ministry of Internal Affairs and Communications (MIC) Housing and Land Survey (住宅・土地統計調査), conducted every five years. The MIC survey has broader coverage in principle — it includes non-transacted properties — but it is a sample survey, whereas the MLIT transaction dataset is a record of actual transactions. The MLIT source has the advantage of annual updates, 丁目-level geographic granularity, and a direct link to the property transaction context (i.e., properties that will change hands and are most likely to be subject to renovations). The MLIT dataset is also the authority from which transaction-level risk disclosures would naturally flow. Assessing the representativeness of MLIT transaction data against the full MIC building stock profile is a valuable target for future validation work.
+An alternative source of construction year data for the residential building stock is the Ministry of Internal Affairs and Communications (MIC) Housing and Land Survey (住宅・土地統計調査), conducted every five years. The MIC survey has broader coverage in principle — it includes non-transacted properties — but it is a sample survey, whereas the MLIT transaction dataset is a record of actual transactions. The MLIT source has the advantage of annual updates, sub-district (丁目) level geographic granularity, and a direct link to the property transaction context (i.e., properties that will change hands and are most likely to be subject to renovations). The MLIT dataset is also the authority from which transaction-level risk disclosures would naturally flow. Assessing the representativeness of MLIT transaction data against the full MIC building stock profile is a valuable target for future validation work.
 
 ### 2.2 District Aggregation
 
@@ -125,7 +130,7 @@ This produces a continuous score between 0 and 100. Categorical risk levels are 
 
 The threshold values are not derived from empirical calibration against survey data — no such calibration dataset exists. They are set to produce a distribution that reflects the underlying regulatory intent: buildings from before Japan's peak consumption era represent genuinely high risk, while post-ban construction represents genuinely low but non-zero risk.
 
-**Algorithmic note**: The scoring scheme is deterministic — each construction year maps to a fixed point value, and the district score is the arithmetic mean. The term *probabilistic* in this paper's framing refers to the interpretive context: the score is a prior estimate of ACM likelihood based on documented historical base rates in each construction era, not a statistically derived probability. The five tier-boundary values (75, 55, 35, 15) are set judgementally to reflect the regulatory epoch structure; the most consequential parameter is the 1975 boundary year, moving which by ±3 years shifts scoring for the highest-risk spray-era cohort. Future calibration against 石綿事前調査結果報告システム outcomes could convert the index into an empirically validated risk model.
+**Algorithmic note**: The scoring scheme is deterministic — each construction year maps to a fixed point value, and the district score is the arithmetic mean. The term *probabilistic* in this paper's framing refers to the interpretive context: the score is a prior estimate of ACM likelihood based on documented historical base rates in each construction era, not a statistically derived probability. The five tier-boundary values (75, 55, 35, 15) are set judgementally to reflect the regulatory epoch structure; the most consequential parameter is the 1975 boundary year, moving which by ±3 years shifts scoring for the highest-risk spray-era cohort. Future calibration against the survey reporting system outcomes could convert the index into an empirically validated risk model.
 
 ### 2.4 Structure Type as Supplementary Signal
 
@@ -136,7 +141,7 @@ The critical distinction is between wood-frame (木造) and concrete or steel-fr
 - Surveys of RC and SRC buildings from before 1975 must specifically investigate Level 1 spray asbestos in addition to the Level 3 bound materials that dominate residential construction.
 - Surveys of 木造 buildings can generally assume Level 3 materials only, though this assumption should be confirmed.
 
-Prefabricated light steel frame housing (軽量鉄骨造) — widely deployed by major 住宅メーカー from the late 1960s — merits particular attention in the 1968–1988 construction window. These structures frequently incorporated asbestos siding boards (スレート外壁), roof tiles (スレート屋根), and ceiling boards as Level 3 bound ACMs; spray asbestos was not typical, but the prevalence of asbestos-containing composite materials was high. 軽量鉄骨造 buildings from this era should not be assumed equivalent to either 木造 (where ACM presence is limited to specific product categories) or heavy structural steel frame (重量鉄骨造) or RC/SRC (where Level 1 spray asbestos is a concern for fireproofing of structural members).
+Prefabricated light steel frame housing (軽量鉄骨造) — widely deployed by major housing manufacturers (住宅メーカー) from the late 1960s — merits particular attention in the 1968–1988 construction window. These structures frequently incorporated asbestos siding boards (スレート外壁), roof tiles (スレート屋根), and ceiling boards as Level 3 bound ACMs; spray asbestos was not typical, but the prevalence of asbestos-containing composite materials was high. 軽量鉄骨造 buildings from this era should not be assumed equivalent to either 木造 (where ACM presence is limited to specific product categories) or heavy structural steel frame (重量鉄骨造) or RC/SRC (where Level 1 spray asbestos is a concern for fireproofing of structural members).
 
 **A note on MLIT's S造 category**: The S造 (steel frame) field in MLIT transaction data subsumes both heavy structural steel frame (重量鉄骨造, predominantly commercial and multi-storey residential) and light steel frame prefab (軽量鉄骨造, predominantly single-family housing). These two sub-categories carry different Level 1 asbestos probabilities: heavy structural steel members in commercial-scale construction are the primary targets for spray asbestos fireproofing; light prefab steel frames in single-family homes are not. Surveyors working from the district-level overlay on S造 transactions should confirm whether the specific building is heavy or light steel frame before applying Level 1 survey protocols — the structure type recorded in the MLIT dataset does not make this distinction.
 
@@ -172,7 +177,7 @@ The 1,360 scored districts distribute across risk levels as follows:
 
 ### 3.3 Highest-Risk Districts
 
-The 116 very-high-risk districts (score ≥ 75) are concentrated in areas with predominantly pre-1975 building stock, particularly in older parts of Fukuoka City's central wards, Kitakyushu City's industrial zones, and early post-war public housing estates across the prefecture. These districts are dominated by SRC and RC structure types — indicating a meaningful probability of Level 1 spray asbestos in addition to Level 3 bound materials.
+The 116 very-high-risk districts (score ≥ 75) are concentrated in areas with predominantly pre-1975 building stock, particularly in older parts of Fukuoka City's central wards, Kitakyushu City's industrial zones, and early post-war housing areas across the prefecture. By dominant recorded structure type these districts are predominantly wood-frame, not concrete or steel: of the 116, 85 (73%) are 木造-dominant, 17 (15%) RC-dominant, 8 (7%) SRC-dominant, and 6 (5%) steel- or light-steel-frame-dominant. This matters for survey planning. Level 1 spray asbestos was a fireproofing material for steel and concrete structural members, not for wood-frame housing (Section 2.4); the RC/SRC minority within the very-high tier is therefore where the additional Level 1 concern applies. The predominance of pre-1975 wood-frame stock instead signals widespread Level 3 bound ACMs — roofing slate, siding board, and ceiling board.
 
 District-level detail is provided in the full dataset (see data release).
 
@@ -186,7 +191,17 @@ Across all scored districts, structure type distribution reflects the compositio
 - S造 (steel frame): present in commercial and mixed-use districts
 - 軽量鉄骨造 (light steel frame): concentrated in suburban residential areas settled primarily in the 1970s–1980s; frequent presence of asbestos composite materials (siding, roofing, ceiling boards)
 
-This distribution is consistent with expectations: the highest-risk districts combine pre-1975 construction with SRC/RC structural types — the specific combination that maximises Level 1 spray asbestos exposure risk.
+This distribution refines the risk picture. The very-high tier is dominated by pre-1975 wood-frame stock (Level 3 bound ACMs); the RC/SRC subset within it is the smaller population where pre-1975 construction and steel or concrete structure coincide — the specific combination that additionally raises Level 1 spray-asbestos exposure risk. Structure type thus acts as a triage signal *within* an age-defined high-risk tier, not as the driver of the tier itself.
+
+### 3.5 Sensitivity and Baseline Comparison
+
+Three robustness checks were run on the full 1,360-district dataset; the analysis code is released alongside the pipeline (`analyze_asbestos_sensitivity.py`).
+
+**Spray-era boundary.** The 1975 boundary separates the very-high (100-point) cohort from the high (75-point) cohort and is the model's most consequential parameter. The model bins at 1975 / 1990 / 2000 / 2006; the 1990 cut is placed conservatively ahead of the 1995 crocidolite/amosite ban to bound the transition rather than mark it precisely. Shifting the 1975 boundary by ±3 years changes the very-high count from 116 (at 1975) to 103 (at 1972) or 127 (at 1978) — a shift of 11–13 districts, roughly one percentage point of the distribution. The tier ordering is stable.
+
+**Tier cut-points.** Perturbing the four categorical cut-points (75/55/35/15) by ±5 points changes the very-high count from 116 to 59 (cuts +5) or 130 (cuts −5), and moves the headline "≥ low-moderate" share across an 82–92% range. The categorical labels are therefore more sensitive to cut placement than the underlying continuous score, which is unchanged; the district ranking is likewise unaffected. Users requiring hard categories should treat the boundaries as reporting conventions, not thresholds with empirical support.
+
+**Naive baseline — does the index beat age alone?** Because the score is a deterministic step-function of construction year, the district index is near-monotone in mean construction year: the Spearman rank correlation between district mean construction year and index score is |ρ| = 0.97 (n = 1,360). The index therefore adds essentially no district-ranking information beyond mean building age. Its contribution is not a novel discriminator but a *calibrated interpretation* — a mapping from age onto documented regulatory epochs and their ACM base rates, packaged as an open, reproducible overlay. This is stated plainly so the index is not mistaken for an independent risk model (see Section 6.8).
 
 ---
 
@@ -234,7 +249,7 @@ The MLIT 石綿事前調査結果報告システム (pre-demolition survey repor
 
 The most significant limitation of this methodology is that MLIT transaction data records the year a building was constructed — not whether it contains asbestos. The risk scores derived here are inferences based on the regulatory and material history of Japanese construction, not measurements of actual asbestos presence or concentration.
 
-The base rates underlying the era assignments are informed by the aggregate picture: official government estimates [19,25,26] place the number of private buildings containing ACMs at 2.8–3 million out of approximately 60 million total housing units — roughly 5% overall prevalence when considered across all construction eras. This overall figure masks dramatic era-specific variation. The near-universal use of asbestos cement roofing slates (スレート), siding boards, and floor products in post-war construction implies substantially higher ACM prevalence in the pre-1975 cohort than in the post-2000 cohort. Published era-specific prevalence data for Japanese residential buildings is not available in peer-reviewed form; the construction-era risk assignments therefore rely on the well-documented regulatory and material history of the sector rather than empirically calibrated era-specific ACM survey rates. Calibration against the growing 石綿事前調査結果報告システム database remains the most important near-term methodological development.
+The base rates underlying the era assignments are informed by the aggregate picture: official government estimates [19,25,26] place the number of private buildings containing ACMs at 2.8–3 million out of approximately 60 million total housing units — roughly 5% overall prevalence when considered across all construction eras. This overall figure masks dramatic era-specific variation. The near-universal use of asbestos cement roofing slates (スレート), siding boards, and floor products in post-war construction implies substantially higher ACM prevalence in the pre-1975 cohort than in the post-2000 cohort. Published era-specific prevalence data for Japanese residential buildings is not available in peer-reviewed form; the construction-era risk assignments therefore rely on the well-documented regulatory and material history of the sector rather than empirically calibrated era-specific ACM survey rates. Calibration against the growing survey reporting system database remains the most important near-term methodological development.
 
 A district scoring "very high" does not confirm that every building in that district contains asbestos. A district scoring "low" does not confirm that any particular building is asbestos-free. This distinction must be clearly communicated to all users of the overlay.
 
@@ -244,7 +259,7 @@ The appropriate use case for this data is:
 - Providing purchasers of akiya with baseline risk context prior to commissioning a survey
 - Supporting government resource allocation for surveyor training and capacity building
 
-The overlay is not a substitute for a qualified pre-demolition or pre-renovation survey conducted by a certified 建築物石綿含有建材調査者.
+The overlay is not a substitute for a qualified pre-demolition or pre-renovation survey conducted by a certified asbestos surveyor (建築物石綿含有建材調査者).
 
 ### 6.2 Transaction Data Coverage Gaps
 
@@ -253,7 +268,7 @@ MLIT transaction data captures properties that changed hands via reported transa
 - Long-term municipal or public housing that has not been sold
 - Properties in areas with very low transaction volume (sparse rural districts may be under-represented)
 
-In the Fukuoka dataset, 320 districts were identified but 7 were excluded for having fewer than 3 data points. Truly rural or remote districts with minimal transaction history will have less reliable scores or no score at all. This is a systematic coverage gap that disproportionately affects the areas most likely to contain older, unmaintained akiya.
+In the Fukuoka dataset, 1,895 districts returned at least one transaction with a valid construction year, but 535 of these (28%) were excluded for having fewer than three records, leaving 1,360 scored districts. Truly rural or remote districts with minimal transaction history are disproportionately represented among the 535 excluded — they have less reliable scores or no score at all. This is a systematic coverage gap that disproportionately affects the areas most likely to contain older, unmaintained akiya, which are precisely the population of greatest public-health concern (Section 6.7).
 
 ### 6.3 The 2006 Grey Zone
 
@@ -261,7 +276,7 @@ The risk model assigns zero points to buildings constructed in 2006 or later, re
 
 ### 6.4 Laboratory Testing Reliability
 
-As described in Section 1.4, Japan's primary testing standard has documented sensitivity limitations, and the JIS XRD/DS-PCM method was excluded from ISO 22262-1:2012 (Part 1, qualitative identification) following an ISO working group validation exercise. This means that the 石綿事前調査結果報告システム may contain both false negatives (asbestos present but not detected by the JIS method) and genuine negatives. Any future calibration of the construction-era risk index against survey report data must account for this testing limitation — survey data is not a clean ground truth.
+As described in Section 1.4, Japan's primary testing standard has documented sensitivity limitations, and the JIS XRD/DS-PCM method was excluded from ISO 22262-1:2012 (Part 1, qualitative identification) following an ISO working group validation exercise. This means that the survey reporting system may contain both false negatives (asbestos present but not detected by the JIS method) and genuine negatives. Any future calibration of the construction-era risk index against survey report data must account for this testing limitation — survey data is not a clean ground truth.
 
 This testing reliability concern strengthens rather than undermines the case for construction-era risk screening: a building that tests negative under the current Japanese standard may still contain asbestos. A construction-history-based risk signal provides an independent estimate that does not depend on the accuracy of any single laboratory method, and that is particularly relevant for structures built in eras when spray and fibrous asbestos were predominant.
 
@@ -275,7 +290,15 @@ Two related spatial concerns are unaddressed in this iteration.
 
 **Spatial autocorrelation**: District-level risk scores are not modelled as spatially independent — neighbouring districts in historic urban cores are likely to share construction-era profiles and exhibit positive spatial autocorrelation. A formal Moran's I analysis would be expected to confirm significant clustering of high-risk districts in central Fukuoka City and older industrial zones; Local Indicators of Spatial Association (LISA) would identify the specific high-risk clusters. This has practical significance: spatial clustering of high-risk districts means that neighbourhood demolition exposure risk is compounded — residents in a high-risk district are surrounded by other high-risk districts, increasing cumulative fibre exposure from concurrent demolitions. Future versions of this index should include Moran's I and LISA analysis to characterise the spatial structure of asbestos risk.
 
-**Scale effects (MAUP)**: The choice of 丁目 as the aggregation unit is pragmatic — it is the finest geographic level available in the MLIT transaction dataset — but the Modifiable Areal Unit Problem (MAUP) applies. Aggregating transactions to a different administrative unit (e.g., 大字, ward, or municipality) would produce different risk distributions. The 丁目 level is appropriate for the transaction context — it corresponds to the level at which a purchaser would seek neighbourhood-level risk information — but cross-district boundary comparisons should be interpreted with awareness that risk scores are sensitive to the choice of aggregation boundary. Building-level scoring would be both more precise and more subject to sample-size limitations; district-level scoring is appropriate as a population-level screening tool.
+**Scale effects (MAUP)**: The choice of 丁目 as the aggregation unit is pragmatic — it is the finest geographic level available in the MLIT transaction dataset — but the Modifiable Areal Unit Problem (MAUP) applies. Aggregating transactions to a different administrative unit (e.g., ōaza (大字, a larger rural administrative unit), ward, or municipality) would produce different risk distributions. The 丁目 level is appropriate for the transaction context — it corresponds to the level at which a purchaser would seek neighbourhood-level risk information — but cross-district boundary comparisons should be interpreted with awareness that risk scores are sensitive to the choice of aggregation boundary. Building-level scoring would be both more precise and more subject to sample-size limitations; district-level scoring is appropriate as a population-level screening tool.
+
+### 6.7 Selection Bias: Transactions Are Not the Building Stock
+
+The MLIT source records transactions, not a census of the building stock, and the two populations differ in ways that bias the index. Transacted buildings are, on average, younger and better maintained than the stock as a whole; the buildings of greatest public-health concern — derelict, non-transacted akiya heading for demolition — are systematically under-represented or absent. The 535 districts excluded for fewer than three transactions (Section 6.2) are disproportionately the rural and depopulating areas where such akiya concentrate. The likely direction of the bias is therefore that the index *under*-states risk in exactly the population that matters most for the demolition wave. Assessing representativeness against the MIC Housing and Land Survey building-stock profile (Section 2.1) is the priority correction and is left to future work; until then the index should be read as characterising the *transacted* residential stock, not the full stock.
+
+### 6.8 The Index Is a Calibrated Screening Prior, Not a Validated Risk Model
+
+Two facts bound what the index can claim. First, it has never been validated against measured asbestos presence: the natural ground truth — the 石綿事前調査結果報告システム — is a government-access reporting system with no publicly available address-level or era-stratified aggregate suitable for calibration (Section 5.3). Second, as Section 3.5 shows, the district index is near-monotone in mean construction year (|ρ| = 0.97). The index is therefore best understood as a *screening prior*: it re-expresses building age as a calibrated statement about regulatory-epoch ACM likelihood, and its value is interpretive and operational (open data, a reproducible pipeline, direct fit to existing MLIT infrastructure) rather than a demonstrated improvement in risk discrimination over age. Every downstream use in Section 6.1 is a prioritisation or awareness use, for which a well-calibrated prior is appropriate; none is a diagnosis. Converting the prior into a validated model requires the survey-outcome calibration described in Sections 5.3 and 7.2.
 
 ---
 
@@ -296,12 +319,12 @@ Integration into either platform would address the information asymmetry describ
 The MLIT Real Estate Information Library contains transaction data for all 47 prefectures. Applying this methodology nationally would produce a construction-era asbestos risk overlay covering the entire Japanese residential building stock — the first of its kind. A national dataset would allow:
 - National risk mapping comparable to flood hazard maps already in public use
 - Identification of prefectures and municipalities requiring priority surveyor capacity investment
-- Calibration of the model against the growing 石綿事前調査結果報告システム database
+- Calibration of the model against the growing survey reporting system database
 - Cross-prefecture comparison of demolition wave timing and asbestos risk concentration
 
 ### 7.3 Mandate Pre-Listing Asbestos Survey Disclosure
 
-Article 35 of the Real Estate Transactions Business Law (宅地建物取引業法) already obligates licensed agents to disclose the results of any existing asbestos survey in the 重要事項説明 (Explanation of Important Matters). Under current practice, when no survey has been conducted, agents record "調査未実施" — technically compliant but informationally inadequate for pre-2006 properties where ACM presence is structurally likely. The purchaser learns only that no survey exists, not what the construction-era risk profile implies.
+Article 35 of the Real Estate Transactions Business Law (宅地建物取引業法) already obligates licensed agents to disclose the results of any existing asbestos survey in the 重要事項説明 (Explanation of Important Matters). Under current practice, when no survey has been conducted, agents record "調査未実施" (survey not conducted) — technically compliant but informationally inadequate for pre-2006 properties where ACM presence is structurally likely. The purchaser learns only that no survey exists, not what the construction-era risk profile implies.
 
 We propose that MLIT consider extending the 重要事項説明 framework to require that pre-2006 properties without an existing survey carry a mandatory notice of construction-era asbestos risk, referencing the district-level risk tier. This would not require vendors to commission a survey before listing, but would ensure that construction-era risk information reaches purchasers at the point of transaction. Note that this mechanism cannot reach inherited akiya (相続物件), which bypass the transaction system entirely; reaching that population would require a separate mechanism through municipal vacant property registers.
 
@@ -319,7 +342,7 @@ This paper presents the first systematic methodology for generating a constructi
 
 The methodology is simple, reproducible, and transparently construction-era based. The scoring algorithm is deterministic, deriving risk tiers from documented regulatory history; the approach is probabilistic in the interpretive sense that the score represents a prior estimate of ACM likelihood that can be updated as survey data accumulates. It does not claim to replace laboratory surveys. It claims to provide the first-ever spatial signal for where surveys are most needed and what contractors are most likely to encounter — at no additional data cost to government, using infrastructure MLIT already maintains.
 
-We offer this dataset, methodology, and codebase to MLIT and to Fukuoka City as a contribution to Japan's asbestos management challenge. The overlay is ready for integration into 重ねるハザードマップ pending GeoJSON polygon attachment (Phase 2). National expansion to all 47 prefectures is feasible within weeks using the identical pipeline.
+We offer this dataset, methodology, and codebase to MLIT and to Fukuoka City as a contribution to Japan's asbestos management challenge. The overlay is ready for integration into the Hazard Map Portal pending GeoJSON polygon attachment (Phase 2). National expansion to all 47 prefectures is feasible within weeks using the identical pipeline.
 
 The 9 million vacant homes across Japan are not an abstract policy problem. They are individual buildings with individual histories — and the majority of those built before 1990 contain materials that require careful management. The people buying them deserve to know.
 
@@ -346,7 +369,7 @@ The derived dataset is released under CC BY 4.0. Source data: MLIT Real Estate I
 
 **Availability of data and materials:** See Data Availability statement above.
 
-**Competing interests:** The author operates Torii Property Platform, which applies the asbestos risk methodology described in this paper to a commercial property information product. This interest is disclosed. The pipeline, scoring model, and derived dataset released with this paper are the complete and unmodified research artefacts; no proprietary data or systems are required to reproduce the results.
+**Competing interests:** The author operates Yudane (yudane.com), a property information platform, which applies the asbestos risk methodology described in this paper to a commercial property information product. This interest is disclosed. The pipeline, scoring model, and derived dataset released with this paper are the complete and unmodified research artefacts; no proprietary data or systems are required to reproduce the results.
 
 **Funding:** No funding was received for this work.
 
@@ -368,7 +391,7 @@ The derived dataset is released under CC BY 4.0. Source data: MLIT Real Estate I
 
 4. Eypert-Blaison C, Romero-Hariot A, Clerc F, Vincent R. Assessment of occupational exposure to asbestos fibers: contribution of analytical transmission electron microscopy analysis and comparison with phase-contrast microscopy. *J Occup Environ Hyg*. 2018;15(3):263–274. doi:10.1080/15459624.2017.1412583. PMID: 29194016.
 
-5. Chatfield EJ. Chrysotile TEM analysis and tremolite/actinolite underdetection. *Frontiers in Public Health*. 2025. PMID: 40401060.
+5. Chatfield EJ. Associated minerals in chrysotile deposits and their potential health risks. *Frontiers in Public Health*. 2025. doi:10.3389/fpubh.2025.1583469. PMID: 40401060.
 
 6. Tabata M, Fukuyama M, Yada M, Toshimitsu F. On-site detection of asbestos at the surface of building materials wasted at disaster sites by staining. *Waste Management*. 2022;138:180–188. PMID: 34896738.
 
@@ -414,7 +437,7 @@ The derived dataset is released under CC BY 4.0. Source data: MLIT Real Estate I
 
 27. Murayama T, Takahashi K, Natori Y, Kurumatani N. Estimation of future mortality from pleural malignant mesothelioma in Japan based on an age-cohort model. *American Journal of Industrial Medicine*. 2006;49(1):1–7. doi:10.1002/ajim.20246. PMID: 16362942.
 
-28. Azuma K, et al. Future trend of pleural mesothelioma mortality in Japan based on a risk assessment of asbestos exposure. *International Journal of Occupational and Environmental Health*. 2009. PMID: 19496483.
+28. Azuma K, et al. Mesothelioma risk and environmental exposure to asbestos: past and future trends in Japan. *International Journal of Occupational and Environmental Health*. 2009. doi:10.1179/oeh.2009.15.2.166. PMID: 19496483.
 
 29. Xinhua / UITBB. Japan's Supreme Court rules government accountable for construction asbestos. May 2021.
 
@@ -426,6 +449,4 @@ The derived dataset is released under CC BY 4.0. Source data: MLIT Real Estate I
 
 ---
 
-*Comments and collaboration from MLIT, prefectural governments, and academic researchers are welcome. Contact: sebastian@larsen.studio*
-
-*March 2026*
+*Manuscript prepared March 2026; revised July 2026*

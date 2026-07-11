@@ -1,5 +1,6 @@
 # Private correspondence — not for public repository
 letter-*.md
+cover-letter-*.md
 correspondence/
 
 # Python / OS

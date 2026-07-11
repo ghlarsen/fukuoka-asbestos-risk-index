@@ -2,7 +2,7 @@
 Build asbestos risk overlay data from MLIT Fukuoka transactions.
 
 Reads: aurora-finder/data/transactions/fukuoka_transactions_2024.csv
-Writes: torii/data/asbestos_risk_districts.json
+Writes: asbestos_risk_districts.json
 
 Risk model:
   Pre-1975  → very_high (100 pts)
@@ -142,7 +142,7 @@ def main():
                 "low_moderate": ">= 15",
                 "low": "< 15",
             },
-            "generated_by": "torii/data/build_asbestos_overlay.py",
+            "generated_by": "build_asbestos_overlay.py",
         },
         "districts": results,
     }
